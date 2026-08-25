@@ -1,0 +1,212 @@
+{
+  "stock": {
+    "name": "东阿阿胶",
+    "thscode": "000423.SZ"
+  },
+  "as_of": "2026-08-25T13:57:51+08:00",
+  "source": "同花顺金融数据服务",
+  "price_adjustment": "none（不复权，与实时快照口径一致）",
+  "snapshot": {
+    "thscode": "000423.SZ",
+    "ticker": "000423",
+    "volume": 5551133,
+    "turnover": 270028400,
+    "last_price": 48.93,
+    "price_change": 0.93,
+    "price_change_ratio_pct": 1.9375,
+    "open_price": 48.18,
+    "high_price": 49.06,
+    "low_price": 48.18,
+    "prev_price": 48
+  },
+  "dividend": {
+    "basis_year": 2025,
+    "per_share": 2.5430815,
+    "payments": [
+      {
+        "date": "2025-06-05",
+        "per_share": 1.2729896
+      },
+      {
+        "date": "2025-09-03",
+        "per_share": 1.2700919
+      }
+    ],
+    "history": [
+      {
+        "year": 2021,
+        "total": 0.30468,
+        "payments": [
+          {
+            "date": "2021-08-20",
+            "per_share": 0.30468
+          }
+        ]
+      },
+      {
+        "year": 2022,
+        "total": 0.66014,
+        "payments": [
+          {
+            "date": "2022-08-23",
+            "per_share": 0.66014
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "total": 1.178094,
+        "payments": [
+          {
+            "date": "2023-06-21",
+            "per_share": 1.1780936
+          }
+        ]
+      },
+      {
+        "year": 2024,
+        "total": 2.930883,
+        "payments": [
+          {
+            "date": "2024-06-12",
+            "per_share": 1.7841902
+          },
+          {
+            "date": "2024-09-10",
+            "per_share": 1.146693
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "total": 2.543081,
+        "payments": [
+          {
+            "date": "2025-06-05",
+            "per_share": 1.2729896
+          },
+          {
+            "date": "2025-09-03",
+            "per_share": 1.2700919
+          }
+        ]
+      }
+    ],
+    "assumption": "以 2025 年实际实施分红作为 2026 年预期"
+  },
+  "grid": [
+    {
+      "yield_pct": 2.0,
+      "price": 127.15
+    },
+    {
+      "yield_pct": 2.5,
+      "price": 101.72
+    },
+    {
+      "yield_pct": 3.0,
+      "price": 84.77
+    },
+    {
+      "yield_pct": 3.5,
+      "price": 72.66
+    },
+    {
+      "yield_pct": 4.0,
+      "price": 63.58
+    },
+    {
+      "yield_pct": 4.5,
+      "price": 56.51
+    },
+    {
+      "yield_pct": 5.0,
+      "price": 50.86
+    },
+    {
+      "yield_pct": 5.5,
+      "price": 46.24
+    },
+    {
+      "yield_pct": 6.0,
+      "price": 42.38
+    },
+    {
+      "yield_pct": 6.5,
+      "price": 39.12
+    },
+    {
+      "yield_pct": 7.0,
+      "price": 36.33
+    }
+  ],
+  "range": {
+    "low": 42.38,
+    "mid": 46.24,
+    "high": 50.86,
+    "current_yield_pct": 5.2
+  },
+  "technicals": {
+    "boll": {
+      "daily": {
+        "available": true,
+        "current": 48.93,
+        "lower": 48.36,
+        "middle": 52.6,
+        "upper": 56.84,
+        "position": 0.0671,
+        "zone": "near-lower",
+        "label": "靠近下轨"
+      },
+      "weekly": {
+        "available": true,
+        "current": 48.93,
+        "lower": 44.35,
+        "middle": 50.39,
+        "upper": 56.43,
+        "position": 0.3791,
+        "zone": "middle",
+        "label": "区间中部"
+      },
+      "monthly": {
+        "available": true,
+        "current": 48.93,
+        "lower": 44.06,
+        "middle": 52.5,
+        "upper": 60.93,
+        "position": 0.2887,
+        "zone": "middle",
+        "label": "区间中部"
+      }
+    },
+    "monthly_macd": {
+      "dif": -0.5751,
+      "dea": -0.153,
+      "histogram": -0.4221,
+      "below_zero_axis": true
+    },
+    "sma30_monthly": 55.01
+  },
+  "signals": {
+    "moon_dip": {
+      "triggered": false,
+      "conditions": {
+        "daily_near_lower": true,
+        "weekly_near_lower": false,
+        "monthly_near_lower": false,
+        "monthly_macd_below_zero": true
+      },
+      "definition": "日/周/月 BOLL 均位于下轨 20% 区域，且月线 MACD 位于零轴下方"
+    },
+    "dragon_return": {
+      "triggered": false,
+      "conditions": {
+        "recent_monthly_breakout": true,
+        "within_3pct_of_support": false,
+        "holding_support": false
+      },
+      "definition": "近6个月月线向上突破中轨，当前回踩月线中轨或30月均线±3%并守住支撑"
+    }
+  },
+  "method_note": "策略监测信号是基于用户规则的机械化代理，不等于买卖建议。"
+}
