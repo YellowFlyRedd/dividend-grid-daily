@@ -1,0 +1,91 @@
+name: Daily dividend dashboard refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    # China Standard Time is UTC+8 and has no daylight-saving changes.
+    - cron: "10 8 * * 1-5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-dividend-dashboard
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      HITHINK_FINANCE_API_KEY: ${{ secrets.HITHINK_FINANCE_API_KEY }}
+
+    steps:
+      - name: Check out dashboard
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Restore market database
+        uses: actions/cache@v4
+        with:
+          path: ~/.config/hithink-finance
+          key: hithink-market-db-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            hithink-market-db-${{ runner.os }}-
+
+      - name: Install dashboard tools
+        run: |
+          npm ci
+          npm install --global @hithink-tech/hithink-finance-cli@0.1.5
+
+      - name: Initialize or synchronize market database
+        run: |
+          if hithink-finance data status --format json; then
+            hithink-finance data sync --format json
+          else
+            hithink-finance data init --format json
+          fi
+
+      - name: Refresh stock directory and dashboard data
+        run: |
+          hithink-finance symbol list --exchange SH,SZ --asset-type a-share --limit 10000 --offset 0 --output data/symbols.json --format json
+          python3 scripts/refresh_screener.py
+          python3 scripts/refresh_dashboard.py --fetch
+
+      - name: Validate generated data
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          screener = json.loads(Path("data/screener.json").read_text())
+          dashboard = json.loads(Path("data/dashboard.json").read_text())
+          assert len(screener["top10"]) == 10
+          assert len(screener["candidates"]) >= 100
+          assert dashboard["snapshot"]["last_price"] > 0
+          assert dashboard["dividend"]["per_share"] > 0
+          assert len(dashboard["grid"]) == 11
+          PY
+          npm run build
+
+      - name: Commit complete refresh
+        run: |
+          if git diff --quiet -- data/screener.json data/dashboard.json; then
+            echo "No dashboard data changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/screener.json data/dashboard.json
+          git commit -m "Refresh dividend dashboard $(date -u +%F)"
+          git push
