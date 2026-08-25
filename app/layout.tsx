@@ -5,6 +5,7 @@ import "./globals.css";
 import "./selection.css";
 import "./screener.css";
 import "./search.css";
+import "./glass.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

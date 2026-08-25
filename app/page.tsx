@@ -27,7 +27,7 @@ export default function Home() {
           <p className="timestamp">更新于 {new Date(dashboard.as_of).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai", hour12: false })}</p>
         </div>
       </header>
-      <FavoriteScreener />
+      <FavoriteScreener>
       <div className="detail-divider"><span>收藏示例 · 东阿阿胶详细监测</span></div>
       <section className="range-strip">
         <div><p className="section-kicker">你的估值锚</p><h2>{money(range.low)} — {money(range.high)}</h2><p>{dividend.assumption}，每股现金分红 {dividend.per_share.toFixed(4)} 元。</p></div>
@@ -53,6 +53,7 @@ export default function Home() {
       <section className="bottom-grid"><article className="panel"><p className="section-kicker">下蛋记录</p><h2>现金分红轨迹</h2><div className="dividend-bars">{dividend.history.map(year=><div key={year.year}><span>{year.year}</span><i style={{width:`${Math.min(100,year.total/3*100)}%`}}/><b>{year.total.toFixed(3)} 元</b></div>)}</div></article>
         <article className="panel discipline"><p className="section-kicker">收网纪律</p><h2>仓位检查清单</h2><ul><li><b>分散</b><span>跨行业配置，避免单一板块集中。</span></li><li><b>留现金</b><span>永不满仓，保留应对波动的缓冲。</span></li><li><b>留底仓</b><span>减仓后保留 10%–20%，继续参与分红。</span></li><li><b>减仓观察</b><span>股息率降至 3%–3.5% 时分批评估。</span></li></ul></article>
       </section>
+      </FavoriteScreener>
       <footer><p>{dashboard.method_note} 假设未来分红与上一完整财年的中报及年报合计相同，未考虑利润变化、特别分红、税费及市场风险。</p><p>数据源：{dashboard.source} · 行情口径：{dashboard.price_adjustment} · 不构成投资建议</p></footer>
     </main>
   );

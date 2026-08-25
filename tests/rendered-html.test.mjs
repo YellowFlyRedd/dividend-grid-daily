@@ -16,9 +16,11 @@ test("renders the dividend Top 10 and watchlist", async () => {
   const html = await response.text();
   assert.match(html, /红利股票每日筛选台/);
   assert.match(html, /今日红利 Top 10/);
-  assert.match(html, /我的每日监测/);
+  assert.match(html, /我的收藏/);
   assert.match(html, /搜索并收藏/);
   assert.match(html, /输入公司名称或股票代码/);
+  assert.match(html, /class="glass-accordion favorites-accordion" open/);
+  assert.match(html, /class="glass-accordion top10-accordion"/);
   assert.match(html, /华特达因/);
   assert.match(html, /☆ 收藏/);
   assert.doesNotMatch(html, /codex-preview/);
