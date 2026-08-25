@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-25T16:14:29+08:00",
+  "as_of": "2026-08-25T16:44:42+08:00",
   "market_data_date": "2026-08-25",
   "basis_fiscal_year": 2025,
   "universe_count": 5550,
@@ -4361,22 +4361,6 @@
       "eligible_count": 544
     },
     {
-      "thscode": "600211.SH",
-      "name": "西藏药业",
-      "price_date": "2026-08-25",
-      "last_price": 38.54,
-      "dividend_per_share": 1.757,
-      "dividend_yield_pct": 4.56,
-      "low_price": 29.28,
-      "mid_price": 31.95,
-      "high_price": 35.14,
-      "dividend_years": 5,
-      "boll_label": "BOLL中部",
-      "volatility_score": 24.6,
-      "score": 59.37,
-      "eligible_count": 544
-    },
-    {
       "thscode": "605077.SH",
       "name": "华康股份",
       "price_date": "2026-08-25",
@@ -4389,6 +4373,22 @@
       "dividend_years": 5,
       "boll_label": "BOLL中部",
       "volatility_score": 24.3,
+      "score": 59.37,
+      "eligible_count": 544
+    },
+    {
+      "thscode": "600211.SH",
+      "name": "西藏药业",
+      "price_date": "2026-08-25",
+      "last_price": 38.54,
+      "dividend_per_share": 1.757,
+      "dividend_yield_pct": 4.56,
+      "low_price": 29.28,
+      "mid_price": 31.95,
+      "high_price": 35.14,
+      "dividend_years": 5,
+      "boll_label": "BOLL中部",
+      "volatility_score": 24.6,
       "score": 59.37,
       "eligible_count": 544
     },
