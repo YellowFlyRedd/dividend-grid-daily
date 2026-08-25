@@ -1,4 +1,5 @@
 import dashboard from "../data/dashboard.json";
+import FavoriteScreener from "./FavoriteScreener";
 
 const money = (value: number) => `¥${value.toFixed(2)}`;
 const labels: Record<string, string> = {
@@ -18,7 +19,7 @@ export default function Home() {
   return (
     <main>
       <header className="hero">
-        <div><p className="eyebrow">LOW VOLATILITY · DIVIDEND GRID</p><h1>红利网格<br />每日观察台</h1><p className="lede">用分红定锚，用网格保持纪律。观察价格与股息率的关系，而不是追逐噪音。</p></div>
+        <div><p className="eyebrow">LOW VOLATILITY · DIVIDEND GRID</p><h1>红利股票<br />每日筛选台</h1><p className="lede">每天从全市场筛选 Top 10，用收藏建立自己的监测清单；用分红定锚，用网格保持纪律。</p></div>
         <div className="quote-card">
           <div className="quote-top"><div><p className="muted">{dashboard.stock.name}</p><p className="code">{dashboard.stock.thscode}</p></div><Status active={snapshot.price_change >= 0}>{snapshot.price_change_ratio_pct >= 0 ? "+" : ""}{snapshot.price_change_ratio_pct.toFixed(2)}%</Status></div>
           <p className="price">{money(lastPrice)}</p>
@@ -26,6 +27,8 @@ export default function Home() {
           <p className="timestamp">更新于 {new Date(dashboard.as_of).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai", hour12: false })}</p>
         </div>
       </header>
+      <FavoriteScreener />
+      <div className="detail-divider"><span>收藏示例 · 东阿阿胶详细监测</span></div>
       <section className="range-strip">
         <div><p className="section-kicker">你的估值锚</p><h2>{money(range.low)} — {money(range.high)}</h2><p>{dividend.assumption}，每股现金分红 {dividend.per_share.toFixed(4)} 元。</p></div>
         <div className="anchor-values"><div><span>6% 防守档</span><b>{money(range.low)}</b></div><div><span>5.5% 中枢</span><b>{money(range.mid)}</b></div><div><span>5% 上沿</span><b>{money(range.high)}</b></div><div className="yield-now"><span>当前静态股息率</span><b>{range.current_yield_pct.toFixed(2)}%</b></div></div>

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { headers } from "next/headers";
 import "./globals.css";
 import "./selection.css";
+import "./screener.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,8 +20,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const host = incoming.get("x-forwarded-host") ?? incoming.get("host") ?? "localhost:3000";
   const protocol = incoming.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
   const image = `${protocol}://${host}/og.png`;
-  const title = "红利网格每日观察台";
-  const description = "以现金分红、股息率网格和多周期技术指标监测东阿阿胶。";
+  const title = "红利股票每日筛选台";
+  const description = "每日筛选低波动红利 Top 10，用收藏建立自己的多股票监测清单。";
   return {
     title,
     description,

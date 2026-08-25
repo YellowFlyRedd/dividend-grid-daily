@@ -41,3 +41,4 @@ yarn-error.log*
 /data/history.json
 /data/dividends.json
 /data/snapshot.json
+/data/symbols.json
