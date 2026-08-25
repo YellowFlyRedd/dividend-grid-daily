@@ -21,6 +21,9 @@ test("renders the dividend Top 10 and watchlist", async () => {
   assert.match(html, /输入公司名称或股票代码/);
   assert.match(html, /class="glass-accordion favorites-accordion" open/);
   assert.match(html, /class="glass-accordion top10-accordion"/);
+  assert.match(html, /favorite-tabs/);
+  assert.match(html, /东阿阿胶/);
+  assert.doesNotMatch(html, /收藏示例/);
   assert.match(html, /华特达因/);
   assert.match(html, /☆ 收藏/);
   assert.doesNotMatch(html, /codex-preview/);
