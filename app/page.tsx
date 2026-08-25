@@ -1,5 +1,6 @@
 import screener from "../data/screener.json";
 import FavoriteScreener from "./FavoriteScreener";
+import StrategyGuide from "./StrategyGuide";
 
 export default function Home() {
   return <main>
@@ -8,6 +9,7 @@ export default function Home() {
       <div className="quote-card market-summary"><p className="section-kicker">MARKET COVERAGE</p><div><span><b>{screener.universe_count.toLocaleString("zh-CN")}</b>全市场股票</span><span><b>{screener.eligible_count.toLocaleString("zh-CN")}</b>合格红利股票</span><span><b>{screener.basis_fiscal_year}</b>分红基准财年</span></div><p className="timestamp">市场数据日期 {screener.market_data_date}</p></div>
     </header>
     <FavoriteScreener/>
+    <StrategyGuide/>
     <footer><p>所有价格区间基于上一完整财年中报与年报合计分红。公司行动报告期使用网页注明的代理归属规则。</p><p>数据源：同花顺金融数据服务 · 机械筛选与监测不构成投资建议</p></footer>
   </main>;
 }

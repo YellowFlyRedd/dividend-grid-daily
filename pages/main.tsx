@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import FavoriteScreener from "../app/FavoriteScreener";
+import StrategyGuide from "../app/StrategyGuide";
 import screener from "../data/screener.json";
 import "../app/globals.css";
 import "../app/selection.css";
@@ -8,6 +9,8 @@ import "../app/screener.css";
 import "../app/search.css";
 import "../app/glass.css";
 import "../app/tabs.css";
+import "../app/strategy-guide.css";
+import "../app/title-refinement.css";
 
 function App() {
   return <main>
@@ -28,6 +31,7 @@ function App() {
       </div>
     </header>
     <FavoriteScreener />
+    <StrategyGuide />
     <footer>
       <p>所有价格区间基于上一完整财年中报与年报合计分红。公司行动报告期使用网页注明的代理归属规则。</p>
       <p>数据源：同花顺金融数据服务 · 机械筛选与监测不构成投资建议</p>

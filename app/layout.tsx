@@ -7,6 +7,8 @@ import "./screener.css";
 import "./search.css";
 import "./glass.css";
 import "./tabs.css";
+import "./strategy-guide.css";
+import "./title-refinement.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
