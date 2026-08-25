@@ -1,10 +1,10 @@
 {
-  "as_of": "2026-08-25T17:00:33+08:00",
+  "as_of": "2026-08-25T17:08:25+08:00",
   "market_data_date": "2026-08-25",
   "basis_fiscal_year": 2025,
   "universe_count": 5550,
-  "eligible_count": 544,
-  "method": "连续3个完整财年分红；静态股息率3%–12%；最近成交额不低于1000万元；按股息率、连续分红、日线BOLL位置与60日低波动综合排序。公司行动数据不含报告期，统一采用9–12月归当年中报、次年1–8月归上一财年年报的代理规则。",
+  "eligible_count": 543,
+  "method": "连续3个完整财年分红；静态股息率3%–12%；最近成交额不低于1000万元；按股息率、连续分红、日线BOLL位置与60日低波动综合排序。仅使用已实施分红；公司行动数据不含报告期时，9–12月归当年中报；同年已有较早分红的最后一笔8月分红也归当年中报；其余归上一财年年报。",
   "top10": [
     {
       "thscode": "000915.SZ",
@@ -20,7 +20,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 35.1,
       "score": 103.51,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603167.SH",
@@ -36,7 +36,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 66.4,
       "score": 101.64,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300406.SZ",
@@ -52,7 +52,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 45.2,
       "score": 99.52,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002572.SZ",
@@ -68,7 +68,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 38.1,
       "score": 97.19,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603551.SH",
@@ -84,7 +84,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 51.2,
       "score": 93.9,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300770.SZ",
@@ -100,23 +100,23 @@
       "boll_label": "靠近下轨",
       "volatility_score": 55.0,
       "score": 93.82,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
-      "thscode": "000423.SZ",
-      "name": "东阿阿胶",
+      "thscode": "002271.SZ",
+      "name": "东方雨虹",
       "price_date": "2026-08-25",
-      "last_price": 48.89,
-      "dividend_per_share": 4.0503933,
-      "dividend_yield_pct": 8.28,
-      "low_price": 67.51,
-      "mid_price": 73.64,
-      "high_price": 81.01,
+      "last_price": 10.83,
+      "dividend_per_share": 0.925,
+      "dividend_yield_pct": 8.54,
+      "low_price": 15.42,
+      "mid_price": 16.82,
+      "high_price": 18.5,
       "dividend_years": 5,
       "boll_label": "靠近下轨",
-      "volatility_score": 46.6,
-      "score": 92.65,
-      "eligible_count": 544
+      "volatility_score": 25.2,
+      "score": 92.31,
+      "eligible_count": 543
     },
     {
       "thscode": "601717.SH",
@@ -132,7 +132,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 36.0,
       "score": 91.58,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000913.SZ",
@@ -148,23 +148,23 @@
       "boll_label": "BOLL中部",
       "volatility_score": 33.1,
       "score": 90.46,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
-      "thscode": "002749.SZ",
-      "name": "国光股份",
+      "thscode": "600219.SH",
+      "name": "南山铝业",
       "price_date": "2026-08-25",
-      "last_price": 8.68,
-      "dividend_per_share": 0.75,
-      "dividend_yield_pct": 8.64,
-      "low_price": 12.5,
-      "mid_price": 13.64,
-      "high_price": 15.0,
+      "last_price": 4.81,
+      "dividend_per_share": 0.4344,
+      "dividend_yield_pct": 9.03,
+      "low_price": 7.24,
+      "mid_price": 7.9,
+      "high_price": 8.69,
       "dividend_years": 5,
       "boll_label": "BOLL中部",
-      "volatility_score": 37.0,
-      "score": 89.18,
-      "eligible_count": 544
+      "volatility_score": 6.1,
+      "score": 88.83,
+      "eligible_count": 543
     }
   ],
   "candidates": [
@@ -182,7 +182,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 35.1,
       "score": 103.51,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603167.SH",
@@ -198,7 +198,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 66.4,
       "score": 101.64,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300406.SZ",
@@ -214,7 +214,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 45.2,
       "score": 99.52,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002572.SZ",
@@ -230,7 +230,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 38.1,
       "score": 97.19,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603551.SH",
@@ -246,7 +246,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 51.2,
       "score": 93.9,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300770.SZ",
@@ -262,23 +262,23 @@
       "boll_label": "靠近下轨",
       "volatility_score": 55.0,
       "score": 93.82,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
-      "thscode": "000423.SZ",
-      "name": "东阿阿胶",
+      "thscode": "002271.SZ",
+      "name": "东方雨虹",
       "price_date": "2026-08-25",
-      "last_price": 48.89,
-      "dividend_per_share": 4.0503933,
-      "dividend_yield_pct": 8.28,
-      "low_price": 67.51,
-      "mid_price": 73.64,
-      "high_price": 81.01,
+      "last_price": 10.83,
+      "dividend_per_share": 0.925,
+      "dividend_yield_pct": 8.54,
+      "low_price": 15.42,
+      "mid_price": 16.82,
+      "high_price": 18.5,
       "dividend_years": 5,
       "boll_label": "靠近下轨",
-      "volatility_score": 46.6,
-      "score": 92.65,
-      "eligible_count": 544
+      "volatility_score": 25.2,
+      "score": 92.31,
+      "eligible_count": 543
     },
     {
       "thscode": "601717.SH",
@@ -294,7 +294,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 36.0,
       "score": 91.58,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000913.SZ",
@@ -310,23 +310,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 33.1,
       "score": 90.46,
-      "eligible_count": 544
-    },
-    {
-      "thscode": "002749.SZ",
-      "name": "国光股份",
-      "price_date": "2026-08-25",
-      "last_price": 8.68,
-      "dividend_per_share": 0.75,
-      "dividend_yield_pct": 8.64,
-      "low_price": 12.5,
-      "mid_price": 13.64,
-      "high_price": 15.0,
-      "dividend_years": 5,
-      "boll_label": "BOLL中部",
-      "volatility_score": 37.0,
-      "score": 89.18,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600219.SH",
@@ -342,7 +326,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 6.1,
       "score": 88.83,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601216.SH",
@@ -358,23 +342,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 41.8,
       "score": 88.68,
-      "eligible_count": 544
-    },
-    {
-      "thscode": "603558.SH",
-      "name": "XD健盛集",
-      "price_date": "2026-08-25",
-      "last_price": 11.78,
-      "dividend_per_share": 0.9,
-      "dividend_yield_pct": 7.64,
-      "low_price": 15.0,
-      "mid_price": 16.36,
-      "high_price": 18.0,
-      "dividend_years": 5,
-      "boll_label": "靠近下轨",
-      "volatility_score": 45.9,
-      "score": 88.07,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600866.SH",
@@ -390,7 +358,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 37.3,
       "score": 87.59,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000858.SZ",
@@ -406,7 +374,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 52.2,
       "score": 85.7,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603569.SH",
@@ -422,7 +390,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 36.6,
       "score": 85.66,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600153.SH",
@@ -438,7 +406,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 46.2,
       "score": 85.43,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600066.SH",
@@ -454,7 +422,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 14.8,
       "score": 84.84,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600273.SH",
@@ -470,7 +438,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 50.3,
       "score": 82.98,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002007.SZ",
@@ -486,7 +454,23 @@
       "boll_label": "BOLL中部",
       "volatility_score": 46.0,
       "score": 82.91,
-      "eligible_count": 544
+      "eligible_count": 543
+    },
+    {
+      "thscode": "000568.SZ",
+      "name": "泸州老窖",
+      "price_date": "2026-08-25",
+      "last_price": 84.73,
+      "dividend_per_share": 5.95,
+      "dividend_yield_pct": 7.02,
+      "low_price": 99.17,
+      "mid_price": 108.18,
+      "high_price": 119.0,
+      "dividend_years": 5,
+      "boll_label": "靠近下轨",
+      "volatility_score": 37.3,
+      "score": 82.88,
+      "eligible_count": 543
     },
     {
       "thscode": "600894.SH",
@@ -502,7 +486,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 44.5,
       "score": 82.46,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000651.SZ",
@@ -518,7 +502,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 68.0,
       "score": 82.26,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300501.SZ",
@@ -534,7 +518,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 4.4,
       "score": 81.66,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002867.SZ",
@@ -550,23 +534,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 55.9,
       "score": 81.52,
-      "eligible_count": 544
-    },
-    {
-      "thscode": "000568.SZ",
-      "name": "泸州老窖",
-      "price_date": "2026-08-25",
-      "last_price": 84.73,
-      "dividend_per_share": 5.7751215,
-      "dividend_yield_pct": 6.82,
-      "low_price": 96.25,
-      "mid_price": 105.0,
-      "high_price": 115.5,
-      "dividend_years": 5,
-      "boll_label": "靠近下轨",
-      "volatility_score": 37.3,
-      "score": 81.44,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "605266.SH",
@@ -582,7 +550,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 35.8,
       "score": 81.31,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603833.SH",
@@ -598,7 +566,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 29.0,
       "score": 81.25,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "301207.SZ",
@@ -614,7 +582,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 81.1,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002884.SZ",
@@ -630,7 +598,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 63.8,
       "score": 80.88,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002170.SZ",
@@ -646,7 +614,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 34.8,
       "score": 79.31,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600983.SH",
@@ -662,7 +630,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 25.4,
       "score": 79.29,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600398.SH",
@@ -678,7 +646,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 62.5,
       "score": 78.77,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603855.SH",
@@ -694,7 +662,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 50.7,
       "score": 78.71,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600694.SH",
@@ -710,7 +678,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 56.2,
       "score": 78.5,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600132.SH",
@@ -726,7 +694,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 44.3,
       "score": 78.5,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002393.SZ",
@@ -742,7 +710,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 38.6,
       "score": 78.28,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002612.SZ",
@@ -758,7 +726,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 6.9,
       "score": 78.22,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "605338.SH",
@@ -774,7 +742,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 23.6,
       "score": 77.59,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002027.SZ",
@@ -790,23 +758,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 44.8,
       "score": 77.37,
-      "eligible_count": 544
-    },
-    {
-      "thscode": "002532.SZ",
-      "name": "天山铝业",
-      "price_date": "2026-08-25",
-      "last_price": 12.57,
-      "dividend_per_share": 0.85,
-      "dividend_yield_pct": 6.76,
-      "low_price": 14.17,
-      "mid_price": 15.45,
-      "high_price": 17.0,
-      "dividend_years": 5,
-      "boll_label": "靠近下轨",
-      "volatility_score": 0.0,
-      "score": 77.33,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600861.SH",
@@ -822,7 +774,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 44.4,
       "score": 76.78,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600741.SH",
@@ -838,7 +790,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 55.0,
       "score": 76.07,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002233.SZ",
@@ -854,7 +806,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 44.9,
       "score": 75.96,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600566.SH",
@@ -870,7 +822,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 20.1,
       "score": 75.85,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601928.SH",
@@ -886,7 +838,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 57.9,
       "score": 75.52,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603566.SH",
@@ -902,7 +854,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 43.8,
       "score": 75.48,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002032.SZ",
@@ -918,7 +870,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 51.9,
       "score": 75.4,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600750.SH",
@@ -934,7 +886,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 36.8,
       "score": 75.4,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600015.SH",
@@ -950,7 +902,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 65.4,
       "score": 75.09,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603279.SH",
@@ -966,7 +918,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 51.6,
       "score": 74.54,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601997.SH",
@@ -982,7 +934,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 57.9,
       "score": 74.18,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300910.SZ",
@@ -998,7 +950,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 25.1,
       "score": 73.87,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601668.SH",
@@ -1014,7 +966,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 63.0,
       "score": 73.86,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002818.SZ",
@@ -1030,7 +982,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 60.6,
       "score": 73.82,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600690.SH",
@@ -1046,7 +998,23 @@
       "boll_label": "靠近下轨",
       "volatility_score": 52.8,
       "score": 73.55,
-      "eligible_count": 544
+      "eligible_count": 543
+    },
+    {
+      "thscode": "000423.SZ",
+      "name": "东阿阿胶",
+      "price_date": "2026-08-25",
+      "last_price": 48.89,
+      "dividend_per_share": 2.7055823,
+      "dividend_yield_pct": 5.53,
+      "low_price": 45.09,
+      "mid_price": 49.19,
+      "high_price": 54.11,
+      "dividend_years": 5,
+      "boll_label": "靠近下轨",
+      "volatility_score": 46.6,
+      "score": 73.4,
+      "eligible_count": 543
     },
     {
       "thscode": "002441.SZ",
@@ -1062,7 +1030,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 39.2,
       "score": 73.17,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600582.SH",
@@ -1078,7 +1046,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 52.5,
       "score": 73.1,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600285.SH",
@@ -1094,7 +1062,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 37.5,
       "score": 72.9,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600742.SH",
@@ -1110,7 +1078,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 54.8,
       "score": 72.51,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "920208.BJ",
@@ -1126,7 +1094,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 0.0,
       "score": 72.47,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601166.SH",
@@ -1142,7 +1110,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 60.6,
       "score": 72.47,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600970.SH",
@@ -1158,7 +1126,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 45.6,
       "score": 72.36,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002091.SZ",
@@ -1174,7 +1142,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 49.1,
       "score": 72.14,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "605368.SH",
@@ -1190,7 +1158,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 55.1,
       "score": 72.12,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600809.SH",
@@ -1206,7 +1174,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 27.1,
       "score": 72.07,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000513.SZ",
@@ -1222,7 +1190,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 34.9,
       "score": 72.03,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603889.SH",
@@ -1238,7 +1206,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 41.8,
       "score": 72.01,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601818.SH",
@@ -1254,7 +1222,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 69.1,
       "score": 71.81,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300979.SZ",
@@ -1270,7 +1238,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 35.1,
       "score": 71.77,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002555.SZ",
@@ -1286,7 +1254,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 31.3,
       "score": 71.7,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600502.SH",
@@ -1302,7 +1270,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 51.1,
       "score": 71.55,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002557.SZ",
@@ -1318,7 +1286,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 38.4,
       "score": 71.44,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300641.SZ",
@@ -1334,7 +1302,23 @@
       "boll_label": "靠近下轨",
       "volatility_score": 8.5,
       "score": 71.06,
-      "eligible_count": 544
+      "eligible_count": 543
+    },
+    {
+      "thscode": "000895.SZ",
+      "name": "双汇发展",
+      "price_date": "2026-08-25",
+      "last_price": 25.17,
+      "dividend_per_share": 1.45,
+      "dividend_yield_pct": 5.76,
+      "low_price": 24.17,
+      "mid_price": 26.36,
+      "high_price": 29.0,
+      "dividend_years": 5,
+      "boll_label": "BOLL中部",
+      "volatility_score": 56.2,
+      "score": 70.94,
+      "eligible_count": 543
     },
     {
       "thscode": "600210.SH",
@@ -1350,7 +1334,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 55.3,
       "score": 70.83,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600177.SH",
@@ -1366,7 +1350,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 67.9,
       "score": 70.78,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "301283.SZ",
@@ -1382,7 +1366,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 34.0,
       "score": 70.61,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002454.SZ",
@@ -1398,7 +1382,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 37.5,
       "score": 70.59,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "301109.SZ",
@@ -1414,7 +1398,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 56.9,
       "score": 70.55,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300360.SZ",
@@ -1430,23 +1414,23 @@
       "boll_label": "靠近下轨",
       "volatility_score": 46.7,
       "score": 70.47,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
-      "thscode": "601339.SH",
-      "name": "百隆东方",
+      "thscode": "603558.SH",
+      "name": "XD健盛集",
       "price_date": "2026-08-25",
-      "last_price": 7.73,
-      "dividend_per_share": 0.43,
-      "dividend_yield_pct": 5.56,
-      "low_price": 7.17,
-      "mid_price": 7.82,
-      "high_price": 8.6,
+      "last_price": 11.78,
+      "dividend_per_share": 0.6,
+      "dividend_yield_pct": 5.09,
+      "low_price": 10.0,
+      "mid_price": 10.91,
+      "high_price": 12.0,
       "dividend_years": 5,
       "boll_label": "靠近下轨",
-      "volatility_score": 14.4,
-      "score": 70.38,
-      "eligible_count": 544
+      "volatility_score": 45.9,
+      "score": 70.24,
+      "eligible_count": 543
     },
     {
       "thscode": "002895.SZ",
@@ -1462,7 +1446,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 6.0,
       "score": 69.86,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002416.SZ",
@@ -1478,7 +1462,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 26.8,
       "score": 69.76,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600039.SH",
@@ -1494,7 +1478,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 45.5,
       "score": 69.69,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002807.SZ",
@@ -1510,7 +1494,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 63.6,
       "score": 69.57,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601169.SH",
@@ -1526,7 +1510,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 66.8,
       "score": 69.54,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600016.SH",
@@ -1542,7 +1526,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 67.4,
       "score": 69.54,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601566.SH",
@@ -1558,7 +1542,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 28.5,
       "score": 69.52,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601801.SH",
@@ -1574,7 +1558,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 58.7,
       "score": 69.47,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000157.SZ",
@@ -1590,7 +1574,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 47.4,
       "score": 69.34,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600007.SH",
@@ -1606,7 +1590,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 43.6,
       "score": 69.27,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601686.SH",
@@ -1622,7 +1606,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 41.0,
       "score": 69.25,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002315.SZ",
@@ -1638,23 +1622,23 @@
       "boll_label": "靠近下轨",
       "volatility_score": 32.2,
       "score": 69.19,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
-      "thscode": "600817.SH",
-      "name": "宇通重工",
+      "thscode": "002749.SZ",
+      "name": "国光股份",
       "price_date": "2026-08-25",
-      "last_price": 9.71,
-      "dividend_per_share": 0.6,
-      "dividend_yield_pct": 6.18,
-      "low_price": 10.0,
-      "mid_price": 10.91,
-      "high_price": 12.0,
+      "last_price": 8.68,
+      "dividend_per_share": 0.5,
+      "dividend_yield_pct": 5.76,
+      "low_price": 8.33,
+      "mid_price": 9.09,
+      "high_price": 10.0,
       "dividend_years": 5,
-      "boll_label": "靠近上轨",
-      "volatility_score": 58.8,
-      "score": 69.13,
-      "eligible_count": 544
+      "boll_label": "BOLL中部",
+      "volatility_score": 37.0,
+      "score": 69.02,
+      "eligible_count": 543
     },
     {
       "thscode": "600496.SH",
@@ -1670,7 +1654,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 39.8,
       "score": 69.01,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603187.SH",
@@ -1686,7 +1670,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 42.3,
       "score": 68.86,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603788.SH",
@@ -1702,7 +1686,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 38.7,
       "score": 68.76,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601311.SH",
@@ -1718,7 +1702,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 46.3,
       "score": 68.69,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002216.SZ",
@@ -1734,7 +1718,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 45.0,
       "score": 68.61,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601098.SH",
@@ -1750,7 +1734,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 60.8,
       "score": 68.6,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600803.SH",
@@ -1766,7 +1750,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 38.5,
       "score": 68.53,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "001323.SZ",
@@ -1782,7 +1766,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 4.5,
       "score": 68.5,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "605337.SH",
@@ -1798,7 +1782,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 32.2,
       "score": 68.37,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600098.SH",
@@ -1814,7 +1798,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 43.2,
       "score": 68.33,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600887.SH",
@@ -1830,7 +1814,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 59.7,
       "score": 68.26,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000538.SZ",
@@ -1846,7 +1830,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 67.1,
       "score": 68.14,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600023.SH",
@@ -1862,7 +1846,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 38.8,
       "score": 68.12,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603529.SH",
@@ -1878,7 +1862,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 46.2,
       "score": 68.01,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600987.SH",
@@ -1894,7 +1878,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 59.2,
       "score": 67.93,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002404.SZ",
@@ -1910,7 +1894,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 14.1,
       "score": 67.81,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603365.SH",
@@ -1926,7 +1910,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 38.9,
       "score": 67.78,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600461.SH",
@@ -1942,7 +1926,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 61.3,
       "score": 67.73,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600642.SH",
@@ -1958,7 +1942,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 43.0,
       "score": 67.68,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603816.SH",
@@ -1974,7 +1958,23 @@
       "boll_label": "BOLL中部",
       "volatility_score": 41.2,
       "score": 67.67,
-      "eligible_count": 544
+      "eligible_count": 543
+    },
+    {
+      "thscode": "601339.SH",
+      "name": "百隆东方",
+      "price_date": "2026-08-25",
+      "last_price": 7.73,
+      "dividend_per_share": 0.4,
+      "dividend_yield_pct": 5.17,
+      "low_price": 6.67,
+      "mid_price": 7.27,
+      "high_price": 8.0,
+      "dividend_years": 5,
+      "boll_label": "靠近下轨",
+      "volatility_score": 14.4,
+      "score": 67.66,
+      "eligible_count": 543
     },
     {
       "thscode": "002736.SZ",
@@ -1990,7 +1990,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 57.7,
       "score": 67.65,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600873.SH",
@@ -2006,7 +2006,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 44.2,
       "score": 67.63,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600600.SH",
@@ -2022,7 +2022,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 54.9,
       "score": 67.59,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600282.SH",
@@ -2038,7 +2038,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 47.8,
       "score": 67.56,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600757.SH",
@@ -2054,7 +2054,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 55.2,
       "score": 67.55,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000719.SZ",
@@ -2070,7 +2070,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 43.9,
       "score": 67.54,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600011.SH",
@@ -2086,7 +2086,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 35.3,
       "score": 67.39,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600036.SH",
@@ -2102,7 +2102,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 62.4,
       "score": 66.96,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "003012.SZ",
@@ -2118,7 +2118,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 48.9,
       "score": 66.81,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002060.SZ",
@@ -2134,7 +2134,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 59.8,
       "score": 66.61,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000848.SZ",
@@ -2150,7 +2150,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 48.2,
       "score": 66.56,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601919.SH",
@@ -2166,7 +2166,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 54.7,
       "score": 66.47,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600019.SH",
@@ -2182,7 +2182,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 55.5,
       "score": 66.45,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002582.SZ",
@@ -2198,7 +2198,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 2.1,
       "score": 66.43,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601555.SH",
@@ -2214,7 +2214,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 45.5,
       "score": 66.43,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002508.SZ",
@@ -2230,7 +2230,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 41.3,
       "score": 66.4,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002839.SZ",
@@ -2246,7 +2246,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 60.2,
       "score": 66.26,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300146.SZ",
@@ -2262,7 +2262,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 38.8,
       "score": 66.26,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601186.SH",
@@ -2278,7 +2278,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 65.6,
       "score": 66.21,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300532.SZ",
@@ -2294,7 +2294,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 6.1,
       "score": 66.19,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601811.SH",
@@ -2310,23 +2310,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 57.9,
       "score": 66.14,
-      "eligible_count": 544
-    },
-    {
-      "thscode": "002521.SZ",
-      "name": "齐峰新材",
-      "price_date": "2026-08-25",
-      "last_price": 6.76,
-      "dividend_per_share": 0.37,
-      "dividend_yield_pct": 5.47,
-      "low_price": 6.17,
-      "mid_price": 6.73,
-      "high_price": 7.4,
-      "dividend_years": 5,
-      "boll_label": "BOLL中部",
-      "volatility_score": 27.5,
-      "score": 66.07,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603515.SH",
@@ -2342,7 +2326,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 53.2,
       "score": 66.04,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002372.SZ",
@@ -2358,7 +2342,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 37.8,
       "score": 66.01,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "001308.SZ",
@@ -2374,7 +2358,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 35.5,
       "score": 65.95,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600352.SH",
@@ -2390,7 +2374,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 0.0,
       "score": 65.94,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "301088.SZ",
@@ -2406,7 +2390,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 43.0,
       "score": 65.65,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000333.SZ",
@@ -2422,7 +2406,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 59.2,
       "score": 65.64,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600480.SH",
@@ -2438,7 +2422,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 22.1,
       "score": 65.46,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000543.SZ",
@@ -2454,7 +2438,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 39.2,
       "score": 65.44,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002327.SZ",
@@ -2470,7 +2454,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 50.9,
       "score": 65.38,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000999.SZ",
@@ -2486,7 +2470,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 50.0,
       "score": 65.19,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600027.SH",
@@ -2502,7 +2486,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 51.0,
       "score": 65.1,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600332.SH",
@@ -2518,7 +2502,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 56.6,
       "score": 65.09,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603309.SH",
@@ -2534,7 +2518,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 43.6,
       "score": 65.04,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002563.SZ",
@@ -2550,7 +2534,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 40.6,
       "score": 64.77,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600382.SH",
@@ -2566,23 +2550,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 0.0,
       "score": 64.75,
-      "eligible_count": 544
-    },
-    {
-      "thscode": "002998.SZ",
-      "name": "优彩资源",
-      "price_date": "2026-08-25",
-      "last_price": 8.0,
-      "dividend_per_share": 0.49,
-      "dividend_yield_pct": 6.13,
-      "low_price": 8.17,
-      "mid_price": 8.91,
-      "high_price": 9.8,
-      "dividend_years": 4,
-      "boll_label": "BOLL中部",
-      "volatility_score": 8.5,
-      "score": 64.72,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601107.SH",
@@ -2598,7 +2566,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 37.5,
       "score": 64.72,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600585.SH",
@@ -2614,7 +2582,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 57.6,
       "score": 64.57,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000828.SZ",
@@ -2630,7 +2598,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 63.0,
       "score": 64.55,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002831.SZ",
@@ -2646,7 +2614,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 0.0,
       "score": 64.37,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600035.SH",
@@ -2662,7 +2630,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 64.1,
       "score": 64.35,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601006.SH",
@@ -2678,7 +2646,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 64.4,
       "score": 64.32,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600197.SH",
@@ -2694,7 +2662,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 43.7,
       "score": 64.29,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300144.SZ",
@@ -2710,7 +2678,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 46.5,
       "score": 64.26,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "001299.SZ",
@@ -2726,7 +2694,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 16.6,
       "score": 64.25,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "688526.SH",
@@ -2742,7 +2710,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 49.4,
       "score": 64.14,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600998.SH",
@@ -2758,23 +2726,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 55.8,
       "score": 64.04,
-      "eligible_count": 544
-    },
-    {
-      "thscode": "600729.SH",
-      "name": "重百集团",
-      "price_date": "2026-08-25",
-      "last_price": 19.46,
-      "dividend_per_share": 0.9499,
-      "dividend_yield_pct": 4.88,
-      "low_price": 15.83,
-      "mid_price": 17.27,
-      "high_price": 19.0,
-      "dividend_years": 5,
-      "boll_label": "BOLL中部",
-      "volatility_score": 48.1,
-      "score": 63.98,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600351.SH",
@@ -2790,7 +2742,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 38.5,
       "score": 63.85,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000899.SZ",
@@ -2806,7 +2758,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 0.0,
       "score": 63.82,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601229.SH",
@@ -2822,7 +2774,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 63.3,
       "score": 63.78,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002322.SZ",
@@ -2838,7 +2790,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 27.8,
       "score": 63.69,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603006.SH",
@@ -2854,7 +2806,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 12.2,
       "score": 63.68,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603323.SH",
@@ -2870,7 +2822,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 38.0,
       "score": 63.63,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "003000.SZ",
@@ -2886,7 +2838,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 48.4,
       "score": 63.53,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600782.SH",
@@ -2902,7 +2854,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 51.3,
       "score": 63.52,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000690.SZ",
@@ -2918,7 +2870,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 29.2,
       "score": 63.41,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603444.SH",
@@ -2934,7 +2886,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 27.5,
       "score": 63.38,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603611.SH",
@@ -2950,7 +2902,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 44.5,
       "score": 63.37,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603281.SH",
@@ -2966,7 +2918,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 0.0,
       "score": 63.35,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603195.SH",
@@ -2982,7 +2934,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 52.1,
       "score": 63.35,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603408.SH",
@@ -2998,7 +2950,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 40.2,
       "score": 63.32,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601900.SH",
@@ -3014,7 +2966,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 51.3,
       "score": 63.21,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002705.SZ",
@@ -3030,7 +2982,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 51.1,
       "score": 63.04,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000581.SZ",
@@ -3046,7 +2998,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 60.1,
       "score": 63.03,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600863.SH",
@@ -3062,7 +3014,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 0.0,
       "score": 62.98,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002345.SZ",
@@ -3078,7 +3030,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 0.0,
       "score": 62.98,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600000.SH",
@@ -3094,7 +3046,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 55.2,
       "score": 62.9,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000708.SZ",
@@ -3110,7 +3062,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 51.5,
       "score": 62.88,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002959.SZ",
@@ -3126,7 +3078,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 53.8,
       "score": 62.86,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603967.SH",
@@ -3142,7 +3094,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 43.9,
       "score": 62.82,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603218.SH",
@@ -3158,7 +3110,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 53.4,
       "score": 62.79,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601009.SH",
@@ -3174,7 +3126,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 58.4,
       "score": 62.78,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600612.SH",
@@ -3190,7 +3142,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 52.6,
       "score": 62.75,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002275.SZ",
@@ -3206,7 +3158,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 48.1,
       "score": 62.72,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603801.SH",
@@ -3222,7 +3174,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 9.1,
       "score": 62.7,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002911.SZ",
@@ -3238,7 +3190,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 47.1,
       "score": 62.68,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000001.SZ",
@@ -3254,7 +3206,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 66.8,
       "score": 62.67,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600704.SH",
@@ -3270,7 +3222,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 61.8,
       "score": 62.67,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000498.SZ",
@@ -3286,7 +3238,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 65.5,
       "score": 62.63,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002318.SZ",
@@ -3302,7 +3254,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 18.7,
       "score": 62.62,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601328.SH",
@@ -3318,7 +3270,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 58.6,
       "score": 62.61,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601567.SH",
@@ -3334,23 +3286,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 22.8,
       "score": 62.57,
-      "eligible_count": 544
-    },
-    {
-      "thscode": "002415.SZ",
-      "name": "海康威视",
-      "price_date": "2026-08-25",
-      "last_price": 34.75,
-      "dividend_per_share": 1.7,
-      "dividend_yield_pct": 4.89,
-      "low_price": 28.33,
-      "mid_price": 30.91,
-      "high_price": 34.0,
-      "dividend_years": 5,
-      "boll_label": "BOLL中部",
-      "volatility_score": 32.8,
-      "score": 62.53,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601577.SH",
@@ -3366,7 +3302,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 59.3,
       "score": 62.48,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002991.SZ",
@@ -3382,7 +3318,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 40.8,
       "score": 62.47,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002249.SZ",
@@ -3398,7 +3334,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 14.5,
       "score": 62.43,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002507.SZ",
@@ -3414,7 +3350,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 62.4,
       "score": 62.33,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002690.SZ",
@@ -3430,7 +3366,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 52.6,
       "score": 62.27,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603866.SH",
@@ -3446,7 +3382,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 44.1,
       "score": 62.19,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300573.SZ",
@@ -3462,7 +3398,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 21.1,
       "score": 62.18,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000921.SZ",
@@ -3478,7 +3414,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 26.7,
       "score": 62.16,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002588.SZ",
@@ -3494,7 +3430,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 35.4,
       "score": 62.07,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601658.SH",
@@ -3510,7 +3446,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 66.9,
       "score": 62.01,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600551.SH",
@@ -3526,7 +3462,23 @@
       "boll_label": "BOLL中部",
       "volatility_score": 65.1,
       "score": 61.94,
-      "eligible_count": 544
+      "eligible_count": 543
+    },
+    {
+      "thscode": "600817.SH",
+      "name": "宇通重工",
+      "price_date": "2026-08-25",
+      "last_price": 9.71,
+      "dividend_per_share": 0.5,
+      "dividend_yield_pct": 5.15,
+      "low_price": 8.33,
+      "mid_price": 9.09,
+      "high_price": 10.0,
+      "dividend_years": 5,
+      "boll_label": "靠近上轨",
+      "volatility_score": 58.8,
+      "score": 61.92,
+      "eligible_count": 543
     },
     {
       "thscode": "000900.SZ",
@@ -3542,7 +3494,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 65.9,
       "score": 61.86,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603899.SH",
@@ -3558,7 +3510,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 59.3,
       "score": 61.84,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600901.SH",
@@ -3574,7 +3526,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 48.5,
       "score": 61.71,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600269.SH",
@@ -3590,7 +3542,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 54.9,
       "score": 61.64,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002833.SZ",
@@ -3606,7 +3558,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 16.1,
       "score": 61.61,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601000.SH",
@@ -3622,7 +3574,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 58.1,
       "score": 61.58,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603568.SH",
@@ -3638,7 +3590,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 29.3,
       "score": 61.48,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000786.SZ",
@@ -3654,7 +3606,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 32.7,
       "score": 61.47,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000683.SZ",
@@ -3670,7 +3622,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 23.9,
       "score": 61.42,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600908.SH",
@@ -3686,7 +3638,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 56.4,
       "score": 61.41,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601598.SH",
@@ -3702,7 +3654,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 46.8,
       "score": 61.35,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "301219.SZ",
@@ -3718,7 +3670,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 0.0,
       "score": 61.24,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603277.SH",
@@ -3734,7 +3686,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 20.6,
       "score": 61.07,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002304.SZ",
@@ -3750,7 +3702,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 48.6,
       "score": 60.95,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601330.SH",
@@ -3766,7 +3718,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 41.5,
       "score": 60.93,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603706.SH",
@@ -3782,7 +3734,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 31.4,
       "score": 60.85,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002293.SZ",
@@ -3798,7 +3750,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 31.8,
       "score": 60.79,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601921.SH",
@@ -3814,7 +3766,23 @@
       "boll_label": "BOLL中部",
       "volatility_score": 54.7,
       "score": 60.7,
-      "eligible_count": 544
+      "eligible_count": 543
+    },
+    {
+      "thscode": "002532.SZ",
+      "name": "天山铝业",
+      "price_date": "2026-08-25",
+      "last_price": 12.57,
+      "dividend_per_share": 0.55,
+      "dividend_yield_pct": 4.38,
+      "low_price": 9.17,
+      "mid_price": 10.0,
+      "high_price": 11.0,
+      "dividend_years": 5,
+      "boll_label": "靠近下轨",
+      "volatility_score": 0.0,
+      "score": 60.63,
+      "eligible_count": 543
     },
     {
       "thscode": "300470.SZ",
@@ -3830,7 +3798,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 52.7,
       "score": 60.58,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000726.SZ",
@@ -3846,7 +3814,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 61.4,
       "score": 60.55,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600681.SH",
@@ -3862,7 +3830,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 52.7,
       "score": 60.53,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601528.SH",
@@ -3878,7 +3846,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 60.7,
       "score": 60.53,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600008.SH",
@@ -3894,7 +3862,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 61.6,
       "score": 60.53,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600295.SH",
@@ -3910,7 +3878,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 26.5,
       "score": 60.49,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "605507.SH",
@@ -3926,7 +3894,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 31.9,
       "score": 60.48,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603519.SH",
@@ -3942,7 +3910,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 0.0,
       "score": 60.46,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002128.SZ",
@@ -3958,7 +3926,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 15.9,
       "score": 60.46,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600639.SH",
@@ -3974,7 +3942,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 57.6,
       "score": 60.3,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300743.SZ",
@@ -3990,7 +3958,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 41.8,
       "score": 60.26,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600958.SH",
@@ -4006,7 +3974,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 52.4,
       "score": 60.24,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000596.SZ",
@@ -4022,7 +3990,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 13.3,
       "score": 60.23,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601128.SH",
@@ -4038,7 +4006,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 53.6,
       "score": 60.22,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000932.SZ",
@@ -4054,7 +4022,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 45.6,
       "score": 60.16,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "605599.SH",
@@ -4070,7 +4038,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 20.2,
       "score": 60.09,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "605377.SH",
@@ -4086,7 +4054,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 2.6,
       "score": 60.06,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600064.SH",
@@ -4102,7 +4070,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 58.6,
       "score": 60.02,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600662.SH",
@@ -4118,7 +4086,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 52.1,
       "score": 59.98,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600057.SH",
@@ -4134,7 +4102,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 49.7,
       "score": 59.97,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601838.SH",
@@ -4150,7 +4118,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 54.9,
       "score": 59.93,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000951.SZ",
@@ -4166,7 +4134,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 10.5,
       "score": 59.89,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000429.SZ",
@@ -4182,7 +4150,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 34.3,
       "score": 59.87,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002228.SZ",
@@ -4198,7 +4166,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 45.0,
       "score": 59.83,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600941.SH",
@@ -4214,7 +4182,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 64.7,
       "score": 59.78,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000550.SZ",
@@ -4230,7 +4198,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 49.6,
       "score": 59.68,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601825.SH",
@@ -4246,7 +4214,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 50.4,
       "score": 59.6,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603368.SH",
@@ -4262,7 +4230,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 45.8,
       "score": 59.58,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603307.SH",
@@ -4278,7 +4246,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 59.54,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603317.SH",
@@ -4294,7 +4262,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 8.4,
       "score": 59.49,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600761.SH",
@@ -4310,7 +4278,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 35.5,
       "score": 59.49,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601728.SH",
@@ -4326,7 +4294,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 49.5,
       "score": 59.47,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603345.SH",
@@ -4342,7 +4310,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 34.9,
       "score": 59.46,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603948.SH",
@@ -4358,23 +4326,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 2.0,
       "score": 59.4,
-      "eligible_count": 544
-    },
-    {
-      "thscode": "605077.SH",
-      "name": "华康股份",
-      "price_date": "2026-08-25",
-      "last_price": 10.96,
-      "dividend_per_share": 0.5,
-      "dividend_yield_pct": 4.56,
-      "low_price": 8.33,
-      "mid_price": 9.09,
-      "high_price": 10.0,
-      "dividend_years": 5,
-      "boll_label": "BOLL中部",
-      "volatility_score": 24.3,
-      "score": 59.37,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600211.SH",
@@ -4390,7 +4342,23 @@
       "boll_label": "BOLL中部",
       "volatility_score": 24.6,
       "score": 59.37,
-      "eligible_count": 544
+      "eligible_count": 543
+    },
+    {
+      "thscode": "605077.SH",
+      "name": "华康股份",
+      "price_date": "2026-08-25",
+      "last_price": 10.96,
+      "dividend_per_share": 0.5,
+      "dividend_yield_pct": 4.56,
+      "low_price": 8.33,
+      "mid_price": 9.09,
+      "high_price": 10.0,
+      "dividend_years": 5,
+      "boll_label": "BOLL中部",
+      "volatility_score": 24.3,
+      "score": 59.37,
+      "eligible_count": 543
     },
     {
       "thscode": "601518.SH",
@@ -4406,7 +4374,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 57.4,
       "score": 59.36,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000404.SZ",
@@ -4422,7 +4390,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 20.0,
       "score": 59.35,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601336.SH",
@@ -4438,7 +4406,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 21.6,
       "score": 59.35,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603565.SH",
@@ -4454,7 +4422,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 18.5,
       "score": 59.28,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601033.SH",
@@ -4470,7 +4438,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 61.0,
       "score": 59.23,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "301087.SZ",
@@ -4486,7 +4454,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 30.0,
       "score": 59.22,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "001286.SZ",
@@ -4502,7 +4470,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 26.5,
       "score": 59.12,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601019.SH",
@@ -4518,7 +4486,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 52.4,
       "score": 59.08,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600919.SH",
@@ -4534,7 +4502,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 62.6,
       "score": 59.05,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002035.SZ",
@@ -4550,7 +4518,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 50.7,
       "score": 59.05,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600926.SH",
@@ -4566,7 +4534,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 62.6,
       "score": 59.05,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002236.SZ",
@@ -4582,7 +4550,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 50.2,
       "score": 59.03,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "301206.SZ",
@@ -4598,7 +4566,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 48.5,
       "score": 59.01,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002043.SZ",
@@ -4614,7 +4582,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 19.5,
       "score": 59.0,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603897.SH",
@@ -4630,7 +4598,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 58.82,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002406.SZ",
@@ -4646,7 +4614,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 25.4,
       "score": 58.79,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603233.SH",
@@ -4662,7 +4630,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 21.6,
       "score": 58.72,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601860.SH",
@@ -4678,7 +4646,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 63.8,
       "score": 58.72,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600300.SH",
@@ -4694,7 +4662,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 56.6,
       "score": 58.7,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601318.SH",
@@ -4710,7 +4678,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 43.1,
       "score": 58.66,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300978.SZ",
@@ -4726,7 +4694,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 16.6,
       "score": 58.66,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000928.SZ",
@@ -4742,7 +4710,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 48.5,
       "score": 58.62,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603998.SH",
@@ -4758,7 +4726,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 24.3,
       "score": 58.61,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601083.SH",
@@ -4774,7 +4742,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 29.0,
       "score": 58.52,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603326.SH",
@@ -4790,7 +4758,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 34.4,
       "score": 58.5,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600261.SH",
@@ -4806,7 +4774,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 46.5,
       "score": 58.45,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002001.SZ",
@@ -4822,7 +4790,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 18.5,
       "score": 58.44,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002014.SZ",
@@ -4838,7 +4806,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 38.7,
       "score": 58.4,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603689.SH",
@@ -4854,7 +4822,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 61.3,
       "score": 58.33,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600519.SH",
@@ -4870,7 +4838,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 52.7,
       "score": 58.17,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601398.SH",
@@ -4886,7 +4854,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 56.8,
       "score": 58.17,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000885.SZ",
@@ -4902,7 +4870,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 59.2,
       "score": 58.16,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600867.SH",
@@ -4918,7 +4886,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 22.0,
       "score": 58.13,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600050.SH",
@@ -4934,7 +4902,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 65.9,
       "score": 58.02,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600018.SH",
@@ -4950,7 +4918,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 69.4,
       "score": 57.99,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603600.SH",
@@ -4966,7 +4934,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 47.4,
       "score": 57.97,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601298.SH",
@@ -4982,7 +4950,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 59.4,
       "score": 57.89,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601963.SH",
@@ -4998,7 +4966,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 47.4,
       "score": 57.85,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600874.SH",
@@ -5014,7 +4982,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 65.5,
       "score": 57.77,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600507.SH",
@@ -5030,7 +4998,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 44.2,
       "score": 57.75,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "001227.SZ",
@@ -5046,7 +5014,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 66.6,
       "score": 57.7,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000528.SZ",
@@ -5062,7 +5030,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 46.2,
       "score": 57.64,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603697.SH",
@@ -5078,7 +5046,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 16.9,
       "score": 57.51,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601077.SH",
@@ -5094,7 +5062,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 48.0,
       "score": 57.5,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002154.SZ",
@@ -5110,7 +5078,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 33.4,
       "score": 57.5,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601916.SH",
@@ -5126,7 +5094,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 51.9,
       "score": 57.49,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600755.SH",
@@ -5142,7 +5110,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 58.4,
       "score": 57.44,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "301047.SZ",
@@ -5158,7 +5126,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 57.41,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601390.SH",
@@ -5174,7 +5142,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 55.6,
       "score": 57.41,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603113.SH",
@@ -5190,7 +5158,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 11.5,
       "score": 57.3,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002056.SZ",
@@ -5206,7 +5174,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 57.3,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603096.SH",
@@ -5222,7 +5190,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 44.0,
       "score": 57.27,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300628.SZ",
@@ -5238,7 +5206,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 14.7,
       "score": 57.26,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600820.SH",
@@ -5254,7 +5222,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 66.5,
       "score": 57.24,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000544.SZ",
@@ -5270,7 +5238,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 61.3,
       "score": 57.12,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "001965.SZ",
@@ -5286,7 +5254,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 50.2,
       "score": 57.08,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000088.SZ",
@@ -5302,7 +5270,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 69.2,
       "score": 57.05,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "688208.SH",
@@ -5318,7 +5286,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 12.8,
       "score": 57.02,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002746.SZ",
@@ -5334,7 +5302,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 41.2,
       "score": 56.93,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "001206.SZ",
@@ -5350,7 +5318,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 56.91,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002223.SZ",
@@ -5366,7 +5334,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 53.5,
       "score": 56.83,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000521.SZ",
@@ -5382,7 +5350,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 16.1,
       "score": 56.79,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600483.SH",
@@ -5398,7 +5366,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 37.9,
       "score": 56.77,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600710.SH",
@@ -5414,7 +5382,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 43.8,
       "score": 56.76,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601998.SH",
@@ -5430,7 +5398,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 53.8,
       "score": 56.72,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300908.SZ",
@@ -5446,7 +5414,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 36.0,
       "score": 56.63,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603369.SH",
@@ -5462,7 +5430,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 14.3,
       "score": 56.62,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002206.SZ",
@@ -5478,7 +5446,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 48.6,
       "score": 56.57,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600886.SH",
@@ -5494,7 +5462,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 59.3,
       "score": 56.52,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002003.SZ",
@@ -5510,7 +5478,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 43.3,
       "score": 56.47,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601236.SH",
@@ -5526,7 +5494,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 49.4,
       "score": 56.47,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603288.SH",
@@ -5542,7 +5510,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 49.9,
       "score": 56.46,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600900.SH",
@@ -5558,7 +5526,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 66.4,
       "score": 56.45,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002287.SZ",
@@ -5574,7 +5542,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 44.9,
       "score": 56.45,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601766.SH",
@@ -5590,7 +5558,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 51.7,
       "score": 56.43,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002120.SZ",
@@ -5606,7 +5574,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 52.5,
       "score": 56.43,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000686.SZ",
@@ -5622,7 +5590,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 41.1,
       "score": 56.4,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002533.SZ",
@@ -5638,7 +5606,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 33.5,
       "score": 56.33,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603027.SH",
@@ -5654,7 +5622,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 46.3,
       "score": 56.26,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601939.SH",
@@ -5670,7 +5638,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 55.3,
       "score": 56.05,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "605050.SH",
@@ -5686,7 +5654,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 37.5,
       "score": 55.99,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603658.SH",
@@ -5702,7 +5670,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 41.5,
       "score": 55.99,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000963.SZ",
@@ -5718,7 +5686,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 21.2,
       "score": 55.99,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "605028.SH",
@@ -5734,7 +5702,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 0.0,
       "score": 55.97,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601369.SH",
@@ -5750,7 +5718,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 13.2,
       "score": 55.95,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600096.SH",
@@ -5766,7 +5734,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 19.9,
       "score": 55.9,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603043.SH",
@@ -5782,7 +5750,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 51.9,
       "score": 55.89,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002773.SZ",
@@ -5798,7 +5766,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 18.2,
       "score": 55.78,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002958.SZ",
@@ -5814,7 +5782,23 @@
       "boll_label": "BOLL中部",
       "volatility_score": 62.6,
       "score": 55.73,
-      "eligible_count": 544
+      "eligible_count": 543
+    },
+    {
+      "thscode": "002521.SZ",
+      "name": "齐峰新材",
+      "price_date": "2026-08-25",
+      "last_price": 6.76,
+      "dividend_per_share": 0.27,
+      "dividend_yield_pct": 3.99,
+      "low_price": 4.5,
+      "mid_price": 4.91,
+      "high_price": 5.4,
+      "dividend_years": 5,
+      "boll_label": "BOLL中部",
+      "volatility_score": 27.5,
+      "score": 55.71,
+      "eligible_count": 543
     },
     {
       "thscode": "601288.SH",
@@ -5830,7 +5814,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 51.0,
       "score": 55.59,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002332.SZ",
@@ -5846,7 +5830,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 60.0,
       "score": 55.53,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600982.SH",
@@ -5862,7 +5846,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 8.1,
       "score": 55.5,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600012.SH",
@@ -5878,7 +5862,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 22.3,
       "score": 55.42,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300193.SZ",
@@ -5894,7 +5878,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 33.0,
       "score": 55.4,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600033.SH",
@@ -5910,7 +5894,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 62.5,
       "score": 55.39,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "688366.SH",
@@ -5926,7 +5910,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 20.3,
       "score": 55.39,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000989.SZ",
@@ -5942,7 +5926,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 16.2,
       "score": 55.35,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603053.SH",
@@ -5958,7 +5942,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 63.0,
       "score": 55.27,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600415.SH",
@@ -5974,7 +5958,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 14.2,
       "score": 55.18,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603416.SH",
@@ -5990,7 +5974,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 12.5,
       "score": 55.18,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000600.SZ",
@@ -6006,7 +5990,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 10.1,
       "score": 55.15,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600999.SH",
@@ -6022,23 +6006,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 24.7,
       "score": 54.99,
-      "eligible_count": 544
-    },
-    {
-      "thscode": "688036.SH",
-      "name": "传音控股",
-      "price_date": "2026-08-25",
-      "last_price": 59.1,
-      "dividend_per_share": 2.5,
-      "dividend_yield_pct": 4.23,
-      "low_price": 41.67,
-      "mid_price": 45.45,
-      "high_price": 50.0,
-      "dividend_years": 5,
-      "boll_label": "BOLL中部",
-      "volatility_score": 3.6,
-      "score": 54.97,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600795.SH",
@@ -6054,7 +6022,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 61.1,
       "score": 54.93,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603886.SH",
@@ -6070,7 +6038,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 0.0,
       "score": 54.85,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "688009.SH",
@@ -6086,7 +6054,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 58.3,
       "score": 54.82,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603766.SH",
@@ -6102,7 +6070,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 18.2,
       "score": 54.79,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "001207.SZ",
@@ -6118,7 +6086,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 15.2,
       "score": 54.78,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600660.SH",
@@ -6134,7 +6102,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 42.8,
       "score": 54.77,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002117.SZ",
@@ -6150,7 +6118,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 40.6,
       "score": 54.7,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002966.SZ",
@@ -6166,7 +6134,23 @@
       "boll_label": "靠近上轨",
       "volatility_score": 54.0,
       "score": 54.67,
-      "eligible_count": 544
+      "eligible_count": 543
+    },
+    {
+      "thscode": "605499.SH",
+      "name": "东鹏饮料",
+      "price_date": "2026-08-25",
+      "last_price": 123.7,
+      "dividend_per_share": 5.0,
+      "dividend_yield_pct": 4.04,
+      "low_price": 83.33,
+      "mid_price": 90.91,
+      "high_price": 100.0,
+      "dividend_years": 5,
+      "boll_label": "BOLL中部",
+      "volatility_score": 13.6,
+      "score": 54.66,
+      "eligible_count": 543
     },
     {
       "thscode": "601326.SH",
@@ -6182,7 +6166,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 59.4,
       "score": 54.62,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000598.SZ",
@@ -6198,7 +6182,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 65.4,
       "score": 54.6,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603128.SH",
@@ -6214,7 +6198,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 63.3,
       "score": 54.59,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600323.SH",
@@ -6230,7 +6214,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 48.4,
       "score": 54.56,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603170.SH",
@@ -6246,7 +6230,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 37.7,
       "score": 54.55,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002152.SZ",
@@ -6262,23 +6246,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 29.3,
       "score": 54.52,
-      "eligible_count": 544
-    },
-    {
-      "thscode": "603132.SH",
-      "name": "金徽股份",
-      "price_date": "2026-08-25",
-      "last_price": 18.46,
-      "dividend_per_share": 0.76,
-      "dividend_yield_pct": 4.12,
-      "low_price": 12.67,
-      "mid_price": 13.82,
-      "high_price": 15.2,
-      "dividend_years": 5,
-      "boll_label": "BOLL中部",
-      "volatility_score": 6.9,
-      "score": 54.5,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600976.SH",
@@ -6294,7 +6262,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 16.2,
       "score": 54.41,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002772.SZ",
@@ -6310,7 +6278,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 54.33,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601088.SH",
@@ -6326,7 +6294,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 44.8,
       "score": 54.31,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "301331.SZ",
@@ -6342,7 +6310,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 8.8,
       "score": 54.16,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002540.SZ",
@@ -6358,7 +6326,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 45.3,
       "score": 54.14,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603587.SH",
@@ -6374,7 +6342,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 53.3,
       "score": 54.08,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603303.SH",
@@ -6390,7 +6358,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 54.03,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000408.SZ",
@@ -6406,7 +6374,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 8.6,
       "score": 53.97,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601800.SH",
@@ -6422,7 +6390,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 59.3,
       "score": 53.95,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600558.SH",
@@ -6438,7 +6406,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 44.5,
       "score": 53.93,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600377.SH",
@@ -6454,7 +6422,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 58.7,
       "score": 53.87,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002111.SZ",
@@ -6470,7 +6438,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 50.2,
       "score": 53.87,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600182.SH",
@@ -6486,7 +6454,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 45.0,
       "score": 53.81,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603198.SH",
@@ -6502,7 +6470,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 20.7,
       "score": 53.68,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601601.SH",
@@ -6518,7 +6486,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 31.0,
       "score": 53.67,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603111.SH",
@@ -6534,7 +6502,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 57.6,
       "score": 53.66,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000685.SZ",
@@ -6550,7 +6518,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 44.0,
       "score": 53.61,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600020.SH",
@@ -6566,7 +6534,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 64.8,
       "score": 53.58,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600420.SH",
@@ -6582,7 +6550,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 40.6,
       "score": 53.53,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603676.SH",
@@ -6598,7 +6566,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 40.9,
       "score": 53.49,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000030.SZ",
@@ -6614,7 +6582,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 41.2,
       "score": 53.48,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601158.SH",
@@ -6630,7 +6598,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 70.6,
       "score": 53.48,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600674.SH",
@@ -6646,7 +6614,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 57.5,
       "score": 53.28,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603811.SH",
@@ -6662,7 +6630,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 53.26,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002847.SZ",
@@ -6678,7 +6646,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 16.1,
       "score": 53.24,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000883.SZ",
@@ -6694,7 +6662,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 51.0,
       "score": 53.23,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "920599.BJ",
@@ -6710,7 +6678,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 52.5,
       "score": 53.19,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002956.SZ",
@@ -6726,7 +6694,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 9.7,
       "score": 53.18,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300415.SZ",
@@ -6742,7 +6710,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 18.4,
       "score": 53.18,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002758.SZ",
@@ -6758,7 +6726,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 45.8,
       "score": 53.17,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601857.SH",
@@ -6774,7 +6742,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 37.5,
       "score": 53.15,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000791.SZ",
@@ -6790,7 +6758,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 7.2,
       "score": 53.05,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603357.SH",
@@ -6806,7 +6774,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 50.6,
       "score": 53.04,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600350.SH",
@@ -6822,7 +6790,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 9.8,
       "score": 52.95,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600572.SH",
@@ -6838,23 +6806,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 34.6,
       "score": 52.88,
-      "eligible_count": 544
-    },
-    {
-      "thscode": "000895.SZ",
-      "name": "双汇发展",
-      "price_date": "2026-08-25",
-      "last_price": 25.17,
-      "dividend_per_share": 0.8,
-      "dividend_yield_pct": 3.18,
-      "low_price": 13.33,
-      "mid_price": 14.55,
-      "high_price": 16.0,
-      "dividend_years": 5,
-      "boll_label": "BOLL中部",
-      "volatility_score": 56.2,
-      "score": 52.86,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "688093.SH",
@@ -6870,7 +6822,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 0.0,
       "score": 52.78,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002270.SZ",
@@ -6886,7 +6838,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 8.3,
       "score": 52.72,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603966.SH",
@@ -6902,7 +6854,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 31.8,
       "score": 52.71,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603008.SH",
@@ -6918,7 +6870,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 37.1,
       "score": 52.7,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600826.SH",
@@ -6934,7 +6886,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 12.1,
       "score": 52.66,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600060.SH",
@@ -6950,7 +6902,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 24.4,
       "score": 52.58,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601827.SH",
@@ -6966,7 +6918,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 50.5,
       "score": 52.57,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601187.SH",
@@ -6982,7 +6934,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 33.5,
       "score": 52.55,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000411.SZ",
@@ -6998,7 +6950,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 23.5,
       "score": 52.53,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600479.SH",
@@ -7014,7 +6966,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 59.7,
       "score": 52.52,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002469.SZ",
@@ -7030,7 +6982,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 9.6,
       "score": 52.49,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002061.SZ",
@@ -7046,7 +6998,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 56.3,
       "score": 52.44,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601665.SH",
@@ -7062,7 +7014,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 56.0,
       "score": 52.36,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002010.SZ",
@@ -7078,7 +7030,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 50.1,
       "score": 52.35,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600713.SH",
@@ -7094,7 +7046,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 46.2,
       "score": 52.29,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601163.SH",
@@ -7110,7 +7062,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 56.9,
       "score": 52.27,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600283.SH",
@@ -7126,7 +7078,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 49.2,
       "score": 52.16,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000589.SZ",
@@ -7142,7 +7094,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 59.6,
       "score": 52.03,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002727.SZ",
@@ -7158,7 +7110,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 31.1,
       "score": 51.9,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600648.SH",
@@ -7174,7 +7126,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 50.9,
       "score": 51.52,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300529.SZ",
@@ -7190,7 +7142,23 @@
       "boll_label": "BOLL中部",
       "volatility_score": 35.6,
       "score": 51.5,
-      "eligible_count": 544
+      "eligible_count": 543
+    },
+    {
+      "thscode": "002415.SZ",
+      "name": "海康威视",
+      "price_date": "2026-08-25",
+      "last_price": 34.75,
+      "dividend_per_share": 1.15,
+      "dividend_yield_pct": 3.31,
+      "low_price": 19.17,
+      "mid_price": 20.91,
+      "high_price": 23.0,
+      "dividend_years": 5,
+      "boll_label": "BOLL中部",
+      "volatility_score": 32.8,
+      "score": 51.45,
+      "eligible_count": 543
     },
     {
       "thscode": "600028.SH",
@@ -7206,7 +7174,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 51.7,
       "score": 51.29,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603586.SH",
@@ -7222,7 +7190,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 19.9,
       "score": 51.2,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601988.SH",
@@ -7238,7 +7206,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 52.4,
       "score": 51.04,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000789.SZ",
@@ -7254,7 +7222,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 56.3,
       "score": 50.99,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600258.SH",
@@ -7270,7 +7238,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 42.4,
       "score": 50.91,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600598.SH",
@@ -7286,7 +7254,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 16.8,
       "score": 50.89,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600993.SH",
@@ -7302,7 +7270,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 47.9,
       "score": 50.89,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601018.SH",
@@ -7318,7 +7286,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 65.2,
       "score": 50.87,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300705.SZ",
@@ -7334,7 +7302,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 13.8,
       "score": 50.86,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300453.SZ",
@@ -7350,7 +7318,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 41.7,
       "score": 50.82,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002948.SZ",
@@ -7366,7 +7334,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 44.7,
       "score": 50.79,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002299.SZ",
@@ -7382,23 +7350,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 46.3,
       "score": 50.78,
-      "eligible_count": 544
-    },
-    {
-      "thscode": "301299.SZ",
-      "name": "卓创资讯",
-      "price_date": "2026-08-25",
-      "last_price": 44.21,
-      "dividend_per_share": 1.7,
-      "dividend_yield_pct": 3.85,
-      "low_price": 28.33,
-      "mid_price": 30.91,
-      "high_price": 34.0,
-      "dividend_years": 4,
-      "boll_label": "BOLL中部",
-      "volatility_score": 27.7,
-      "score": 50.69,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603025.SH",
@@ -7414,7 +7366,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 23.9,
       "score": 50.35,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603883.SH",
@@ -7430,7 +7382,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 35.7,
       "score": 50.28,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601319.SH",
@@ -7446,7 +7398,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 35.4,
       "score": 50.23,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002142.SZ",
@@ -7462,7 +7414,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 51.7,
       "score": 50.2,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000028.SZ",
@@ -7478,7 +7430,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 33.1,
       "score": 50.02,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600968.SH",
@@ -7494,7 +7446,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 41.5,
       "score": 49.81,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002632.SZ",
@@ -7510,7 +7462,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 49.73,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603871.SH",
@@ -7526,7 +7478,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 28.4,
       "score": 49.58,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "301019.SZ",
@@ -7542,7 +7494,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 0.0,
       "score": 49.55,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "688289.SH",
@@ -7558,7 +7510,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 9.3,
       "score": 49.55,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300272.SZ",
@@ -7574,7 +7526,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 31.7,
       "score": 49.49,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603156.SH",
@@ -7590,7 +7542,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 49.44,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002375.SZ",
@@ -7606,7 +7558,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 50.9,
       "score": 49.44,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000783.SZ",
@@ -7622,7 +7574,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 49.42,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "301371.SZ",
@@ -7638,7 +7590,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 15.4,
       "score": 49.4,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000672.SZ",
@@ -7654,7 +7606,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 49.31,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600790.SH",
@@ -7670,7 +7622,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 44.3,
       "score": 49.28,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600004.SH",
@@ -7686,7 +7638,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 57.7,
       "score": 49.27,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603071.SH",
@@ -7702,7 +7654,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 31.6,
       "score": 49.13,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601089.SH",
@@ -7718,7 +7670,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 16.3,
       "score": 49.13,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300306.SZ",
@@ -7734,7 +7686,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 42.4,
       "score": 49.09,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "003008.SZ",
@@ -7750,7 +7702,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 43.7,
       "score": 49.09,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000910.SZ",
@@ -7766,7 +7718,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 45.2,
       "score": 49.06,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603237.SH",
@@ -7782,7 +7734,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 36.4,
       "score": 49.02,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600368.SH",
@@ -7798,7 +7750,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 54.3,
       "score": 48.93,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600989.SH",
@@ -7814,7 +7766,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 25.5,
       "score": 48.63,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603733.SH",
@@ -7830,7 +7782,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 48.61,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "301262.SZ",
@@ -7846,7 +7798,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 29.4,
       "score": 48.24,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300099.SZ",
@@ -7862,7 +7814,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 9.7,
       "score": 48.22,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000923.SZ",
@@ -7878,7 +7830,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 12.9,
       "score": 48.2,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002823.SZ",
@@ -7894,7 +7846,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 2.9,
       "score": 48.17,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002033.SZ",
@@ -7910,7 +7862,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 53.7,
       "score": 48.15,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002394.SZ",
@@ -7926,7 +7878,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 16.1,
       "score": 47.96,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000788.SZ",
@@ -7942,7 +7894,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 26.3,
       "score": 47.95,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603995.SH",
@@ -7958,7 +7910,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 47.89,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601225.SH",
@@ -7974,7 +7926,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 27.5,
       "score": 47.78,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "605009.SH",
@@ -7990,7 +7942,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 41.0,
       "score": 47.76,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002543.SZ",
@@ -8006,7 +7958,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 27.1,
       "score": 47.54,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603708.SH",
@@ -8022,7 +7974,23 @@
       "boll_label": "BOLL中部",
       "volatility_score": 31.5,
       "score": 47.54,
-      "eligible_count": 544
+      "eligible_count": 543
+    },
+    {
+      "thscode": "301299.SZ",
+      "name": "卓创资讯",
+      "price_date": "2026-08-25",
+      "last_price": 44.21,
+      "dividend_per_share": 1.5,
+      "dividend_yield_pct": 3.39,
+      "low_price": 25.0,
+      "mid_price": 27.27,
+      "high_price": 30.0,
+      "dividend_years": 4,
+      "boll_label": "BOLL中部",
+      "volatility_score": 27.7,
+      "score": 47.52,
+      "eligible_count": 543
     },
     {
       "thscode": "001872.SZ",
@@ -8038,7 +8006,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 34.2,
       "score": 47.38,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600578.SH",
@@ -8054,7 +8022,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 0.0,
       "score": 47.36,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300230.SZ",
@@ -8070,7 +8038,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 53.8,
       "score": 47.35,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603648.SH",
@@ -8086,7 +8054,23 @@
       "boll_label": "靠近上轨",
       "volatility_score": 36.7,
       "score": 47.35,
-      "eligible_count": 544
+      "eligible_count": 543
+    },
+    {
+      "thscode": "002998.SZ",
+      "name": "优彩资源",
+      "price_date": "2026-08-25",
+      "last_price": 8.0,
+      "dividend_per_share": 0.29,
+      "dividend_yield_pct": 3.63,
+      "low_price": 4.83,
+      "mid_price": 5.27,
+      "high_price": 5.8,
+      "dividend_years": 4,
+      "boll_label": "BOLL中部",
+      "volatility_score": 8.5,
+      "score": 47.22,
+      "eligible_count": 543
     },
     {
       "thscode": "002993.SZ",
@@ -8102,7 +8086,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 47.18,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "920779.BJ",
@@ -8118,7 +8102,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 47.16,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603919.SH",
@@ -8134,7 +8118,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 8.3,
       "score": 47.15,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603556.SH",
@@ -8150,7 +8134,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 47.13,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600583.SH",
@@ -8166,7 +8150,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 43.9,
       "score": 47.03,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601886.SH",
@@ -8182,7 +8166,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 8.1,
       "score": 46.98,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603699.SH",
@@ -8198,7 +8182,23 @@
       "boll_label": "BOLL中部",
       "volatility_score": 6.9,
       "score": 46.98,
-      "eligible_count": 544
+      "eligible_count": 543
+    },
+    {
+      "thscode": "002852.SZ",
+      "name": "道道全",
+      "price_date": "2026-08-25",
+      "last_price": 8.06,
+      "dividend_per_share": 0.296,
+      "dividend_yield_pct": 3.67,
+      "low_price": 4.93,
+      "mid_price": 5.38,
+      "high_price": 5.92,
+      "dividend_years": 3,
+      "boll_label": "BOLL中部",
+      "volatility_score": 42.3,
+      "score": 46.94,
+      "eligible_count": 543
     },
     {
       "thscode": "301023.SZ",
@@ -8214,7 +8214,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 46.94,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "688697.SH",
@@ -8230,7 +8230,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 46.88,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000933.SZ",
@@ -8246,7 +8246,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 3.2,
       "score": 46.85,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "001368.SZ",
@@ -8262,7 +8262,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 30.7,
       "score": 46.77,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002283.SZ",
@@ -8278,7 +8278,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 46.77,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002788.SZ",
@@ -8294,7 +8294,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 46.76,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603882.SH",
@@ -8310,7 +8310,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 6.2,
       "score": 46.65,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000655.SZ",
@@ -8326,7 +8326,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 44.2,
       "score": 46.64,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "688358.SH",
@@ -8342,7 +8342,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 46.63,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "600938.SH",
@@ -8358,7 +8358,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 26.9,
       "score": 46.6,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603182.SH",
@@ -8374,23 +8374,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 42.9,
       "score": 46.56,
-      "eligible_count": 544
-    },
-    {
-      "thscode": "601899.SH",
-      "name": "紫金矿业",
-      "price_date": "2026-08-25",
-      "last_price": 33.68,
-      "dividend_per_share": 1.02,
-      "dividend_yield_pct": 3.03,
-      "low_price": 17.0,
-      "mid_price": 18.55,
-      "high_price": 20.4,
-      "dividend_years": 5,
-      "boll_label": "BOLL中部",
-      "volatility_score": 2.5,
-      "score": 46.45,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002088.SZ",
@@ -8406,7 +8390,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 15.0,
       "score": 46.41,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002624.SZ",
@@ -8422,7 +8406,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 3.0,
       "score": 46.36,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002879.SZ",
@@ -8438,7 +8422,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 46.29,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "688517.SH",
@@ -8454,7 +8438,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 46.28,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002734.SZ",
@@ -8470,7 +8454,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 46.13,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603605.SH",
@@ -8486,7 +8470,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 26.9,
       "score": 45.57,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "689009.SH",
@@ -8502,7 +8486,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 17.8,
       "score": 45.48,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603075.SH",
@@ -8518,7 +8502,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 30.1,
       "score": 45.44,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000755.SZ",
@@ -8534,7 +8518,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 38.2,
       "score": 44.93,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601333.SH",
@@ -8550,7 +8534,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 62.4,
       "score": 44.59,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "301056.SZ",
@@ -8566,7 +8550,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 6.5,
       "score": 44.56,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300864.SZ",
@@ -8582,7 +8566,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 12.1,
       "score": 44.52,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603116.SH",
@@ -8598,7 +8582,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 10.7,
       "score": 44.51,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300498.SZ",
@@ -8614,7 +8598,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 35.4,
       "score": 44.29,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002887.SZ",
@@ -8630,7 +8614,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 8.3,
       "score": 44.03,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002215.SZ",
@@ -8646,7 +8630,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 19.6,
       "score": 44.01,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "920017.BJ",
@@ -8662,7 +8646,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 11.9,
       "score": 43.51,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "920690.BJ",
@@ -8678,7 +8662,7 @@
       "boll_label": "靠近下轨",
       "volatility_score": 0.0,
       "score": 43.5,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300773.SZ",
@@ -8694,7 +8678,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 43.25,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "300130.SZ",
@@ -8710,7 +8694,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 43.15,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002116.SZ",
@@ -8726,7 +8710,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 17.3,
       "score": 42.96,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "301300.SZ",
@@ -8742,7 +8726,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 32.6,
       "score": 42.91,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "603017.SH",
@@ -8758,7 +8742,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 21.9,
       "score": 42.77,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "601001.SH",
@@ -8774,7 +8758,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 0.0,
       "score": 41.63,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "605117.SH",
@@ -8790,7 +8774,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 1.4,
       "score": 41.56,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "920976.BJ",
@@ -8806,7 +8790,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 40.85,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "002458.SZ",
@@ -8822,7 +8806,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 40.73,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "001378.SZ",
@@ -8838,7 +8822,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 38.75,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "605001.SH",
@@ -8854,7 +8838,7 @@
       "boll_label": "靠近上轨",
       "volatility_score": 34.0,
       "score": 38.65,
-      "eligible_count": 544
+      "eligible_count": 543
     },
     {
       "thscode": "000700.SZ",
@@ -8870,7 +8854,7 @@
       "boll_label": "BOLL中部",
       "volatility_score": 0.0,
       "score": 38.01,
-      "eligible_count": 544
+      "eligible_count": 543
     }
   ]
 }

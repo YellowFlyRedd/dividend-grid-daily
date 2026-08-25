@@ -60,15 +60,16 @@ def normalize_history(envelope: dict) -> list[dict]:
     ]
 
 
-def report_cycle(ex_date: datetime) -> tuple[int, str, str]:
+def report_cycle(ex_date: datetime, *, events_in_year: int = 1, is_latest: bool = True) -> tuple[int, str, str]:
     """Attribute cash payouts to the report that declared them.
 
     HiThink corporate actions currently omits the report period. Dong-E-E-Jiao's
-    interim dividend is normally implemented from September onward in the same
-    year; January-August implementations are attributed to the prior annual
-    report. Keep this explicit so the dashboard never groups by calendar year.
+    A September-December payout is treated as interim. An August payout is also
+    treated as interim only when it is the last of multiple payouts that year;
+    this preserves single August annual payouts while handling earlier interim
+    implementations such as Dong-E-E-Jiao's 2026 event.
     """
-    if ex_date.month >= 9:
+    if ex_date.month >= 9 or (ex_date.month == 8 and events_in_year > 1 and is_latest):
         return ex_date.year, "interim", "中报"
     return ex_date.year - 1, "annual", "年报"
 
@@ -142,15 +143,23 @@ def build_payload() -> dict:
         rows.append(live_bar)
 
     fiscal_years: dict[int, list[dict]] = defaultdict(list)
+    calendar_years: dict[int, list[tuple[datetime, dict]]] = defaultdict(list)
     for item in dividend_envelope["data"]["item"]:
         date = as_date(item["ex_date_ms"])
-        fiscal_year, report_type, report_label = report_cycle(date)
-        fiscal_years[fiscal_year].append({
-            "date": date.strftime("%Y-%m-%d"),
-            "per_share": item["dividend_per_share"],
-            "report_type": report_type,
-            "report_label": report_label,
-        })
+        if date.date() <= snapshot_time.date():
+            calendar_years[date.year].append((date, item))
+    for events in calendar_years.values():
+        events.sort(key=lambda event: event[0])
+        for index, (date, item) in enumerate(events):
+            fiscal_year, report_type, report_label = report_cycle(
+                date, events_in_year=len(events), is_latest=index == len(events) - 1
+            )
+            fiscal_years[fiscal_year].append({
+                "date": date.strftime("%Y-%m-%d"),
+                "per_share": item["dividend_per_share"],
+                "report_type": report_type,
+                "report_label": report_label,
+            })
     basis_fiscal_year = snapshot_time.year - 1
     basis_items = sorted(fiscal_years.get(basis_fiscal_year, []), key=lambda item: item["date"])
     dividend = sum(item["per_share"] for item in basis_items)
@@ -201,7 +210,7 @@ def build_payload() -> dict:
             "payments": basis_items,
             "history": dividend_history,
             "assumption": f"以 {basis_fiscal_year} 财年中报与年报合计分红作为 {snapshot_time.year} 年预期",
-            "attribution_note": "按报告期归属：当年9–12月实施的分红归入当年中报，次年1–8月实施的分红归入上一财年年报。",
+            "attribution_note": "仅计已实施分红。报告期缺失时：9–12月归当年中报；同年已有较早分红的最后一笔8月分红也归当年中报；其余归上一财年年报。",
         },
         "grid": grid,
         "range": {"low": round(dividend / 0.06, 2), "mid": round(dividend / 0.055, 2),

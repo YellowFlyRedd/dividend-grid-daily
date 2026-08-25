@@ -32,12 +32,19 @@ def build() -> dict:
     symbols_payload = json.loads(SYMBOLS.read_text(encoding="utf-8"))
     names = {item["thscode"]: item.get("name") for item in symbols_payload["data"]["item"]}
     sql = f"""
-    WITH fiscal_dividends AS (
-      SELECT thscode,
-        CASE WHEN month(ex_date) >= 9 THEN year(ex_date) ELSE year(ex_date)-1 END AS fiscal_year,
-        sum(dividend_per_share) AS dividend
+    WITH implemented_events AS (
+      SELECT *, count(*) OVER (PARTITION BY thscode, year(ex_date)) AS events_in_year,
+        max(ex_date) OVER (PARTITION BY thscode, year(ex_date)) AS latest_event_in_year
       FROM raw_adjustment_events
-      WHERE dividend_per_share > 0
+      WHERE dividend_per_share > 0 AND ex_date <= DATE '{now.date().isoformat()}'
+    ),
+    fiscal_dividends AS (
+      SELECT thscode,
+        CASE WHEN month(ex_date) >= 9
+               OR (month(ex_date) = 8 AND events_in_year > 1 AND ex_date = latest_event_in_year)
+             THEN year(ex_date) ELSE year(ex_date)-1 END AS fiscal_year,
+        sum(dividend_per_share) AS dividend
+      FROM implemented_events
       GROUP BY 1,2
     ),
     dividends AS (
@@ -109,7 +116,7 @@ def build() -> dict:
         "basis_fiscal_year": basis,
         "universe_count": int(coverage["universe_count"]),
         "eligible_count": rows[0]["eligible_count"] if rows else 0,
-        "method": "连续3个完整财年分红；静态股息率3%–12%；最近成交额不低于1000万元；按股息率、连续分红、日线BOLL位置与60日低波动综合排序。公司行动数据不含报告期，统一采用9–12月归当年中报、次年1–8月归上一财年年报的代理规则。",
+        "method": "连续3个完整财年分红；静态股息率3%–12%；最近成交额不低于1000万元；按股息率、连续分红、日线BOLL位置与60日低波动综合排序。仅使用已实施分红；公司行动数据不含报告期时，9–12月归当年中报；同年已有较早分红的最后一笔8月分红也归当年中报；其余归上一财年年报。",
         "top10": rows[:10],
         "candidates": rows,
     }
