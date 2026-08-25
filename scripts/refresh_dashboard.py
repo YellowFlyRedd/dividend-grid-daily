@@ -43,6 +43,19 @@ def as_date(timestamp_ms: int) -> datetime:
     return datetime.fromtimestamp(timestamp_ms / 1000, tz=timezone.utc).astimezone(SHANGHAI)
 
 
+def report_cycle(ex_date: datetime) -> tuple[int, str, str]:
+    """Attribute cash payouts to the report that declared them.
+
+    HiThink corporate actions currently omits the report period. Dong-E-E-Jiao's
+    interim dividend is normally implemented from September onward in the same
+    year; January-August implementations are attributed to the prior annual
+    report. Keep this explicit so the dashboard never groups by calendar year.
+    """
+    if ex_date.month >= 9:
+        return ex_date.year, "interim", "中报"
+    return ex_date.year - 1, "annual", "年报"
+
+
 def ema(values: list[float], period: int) -> list[float]:
     if not values:
         return []
@@ -111,15 +124,21 @@ def build_payload() -> dict:
     else:
         rows.append(live_bar)
 
-    yearly: dict[int, list[dict]] = defaultdict(list)
+    fiscal_years: dict[int, list[dict]] = defaultdict(list)
     for item in dividend_envelope["data"]["item"]:
         date = as_date(item["ex_date_ms"])
-        yearly[date.year].append({"date": date.strftime("%Y-%m-%d"), "per_share": item["dividend_per_share"]})
-    prior_year = snapshot_time.year - 1
-    prior_items = sorted(yearly.get(prior_year, []), key=lambda item: item["date"])
-    dividend = sum(item["per_share"] for item in prior_items)
+        fiscal_year, report_type, report_label = report_cycle(date)
+        fiscal_years[fiscal_year].append({
+            "date": date.strftime("%Y-%m-%d"),
+            "per_share": item["dividend_per_share"],
+            "report_type": report_type,
+            "report_label": report_label,
+        })
+    basis_fiscal_year = snapshot_time.year - 1
+    basis_items = sorted(fiscal_years.get(basis_fiscal_year, []), key=lambda item: item["date"])
+    dividend = sum(item["per_share"] for item in basis_items)
     if dividend <= 0:
-        raise RuntimeError(f"No implemented cash dividend found for {prior_year}")
+        raise RuntimeError(f"No implemented interim/annual cash dividend found for FY{basis_fiscal_year}")
 
     grid = [{"yield_pct": 2 + step * 0.5, "price": round(dividend / ((2 + step * 0.5) / 100), 2)} for step in range(11)]
     daily_values = [row["close_price"] for row in rows]
@@ -150,16 +169,23 @@ def build_payload() -> dict:
                          "within_3pct_of_support": support_distance <= 0.03,
                          "holding_support": monthly_close >= min(supports) * 0.97}
     dividend_history = []
-    for year in sorted(yearly):
-        items = sorted(yearly[year], key=lambda item: item["date"])
+    for year in sorted(fiscal_years):
+        items = sorted(fiscal_years[year], key=lambda item: item["date"])
         dividend_history.append({"year": year, "total": round(sum(item["per_share"] for item in items), 6), "payments": items})
 
     return {
         "stock": {"name": NAME, "thscode": THSCODE}, "as_of": snapshot_time.isoformat(timespec="seconds"),
         "source": "同花顺金融数据服务", "price_adjustment": "none（不复权，与实时快照口径一致）",
         "snapshot": snapshot,
-        "dividend": {"basis_year": prior_year, "per_share": round(dividend, 7), "payments": prior_items,
-                     "history": dividend_history, "assumption": f"以 {prior_year} 年实际实施分红作为 {snapshot_time.year} 年预期"},
+        "dividend": {
+            "basis_year": basis_fiscal_year,
+            "basis_label": f"{basis_fiscal_year} 财年中报 + 年报",
+            "per_share": round(dividend, 7),
+            "payments": basis_items,
+            "history": dividend_history,
+            "assumption": f"以 {basis_fiscal_year} 财年中报与年报合计分红作为 {snapshot_time.year} 年预期",
+            "attribution_note": "按报告期归属：当年9–12月实施的分红归入当年中报，次年1–8月实施的分红归入上一财年年报。",
+        },
         "grid": grid,
         "range": {"low": round(dividend / 0.06, 2), "mid": round(dividend / 0.055, 2),
                   "high": round(dividend / 0.05, 2), "current_yield_pct": round(dividend / snapshot["last_price"] * 100, 2)},
@@ -183,13 +209,12 @@ def main() -> None:
     DATA_DIR.mkdir(exist_ok=True)
     if args.fetch:
         now = datetime.now(SHANGHAI)
-        prior_year = now.year - 1
         start_ms = int(datetime(now.year - 5, 1, 1, tzinfo=SHANGHAI).timestamp() * 1000)
         end_ms = int(now.timestamp() * 1000)
         run_cli("market", "history", "--thscode", THSCODE, "--start-ms", str(start_ms), "--end-ms", str(end_ms),
                 "--adjust", "none", "--output", str(DATA_DIR / "history.json"))
         run_cli("market", "corporate-actions", "--thscode", THSCODE, "--from-date", f"{now.year - 5}-01-01",
-                "--to-date", f"{prior_year}-12-31", "--output", str(DATA_DIR / "dividends.json"))
+                "--to-date", now.strftime("%Y-%m-%d"), "--output", str(DATA_DIR / "dividends.json"))
         run_cli("market", "snapshot", "--thscodes", THSCODE, "--limit", "1", "--output", str(DATA_DIR / "snapshot.json"))
     write_json(DATA_DIR / "dashboard.json", build_payload())
     print(DATA_DIR / "dashboard.json")
