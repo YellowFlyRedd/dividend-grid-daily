@@ -43,7 +43,9 @@ jobs:
       - name: Restore market database
         uses: actions/cache@v4
         with:
-          path: ~/.config/hithink-finance
+          path: |
+            ~/.config/hithink-finance
+            ~/.local/share/hithink-finance
           key: hithink-market-db-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
             hithink-market-db-${{ runner.os }}-
