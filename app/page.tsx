@@ -46,6 +46,7 @@ export default function Home() {
           <div className="indicator macd"><p>月线 MACD</p><h3>{technicals.monthly_macd.below_zero_axis?"零轴下方":"零轴上方"}</h3><div className="macd-row"><span>DIF {technicals.monthly_macd.dif.toFixed(3)}</span><span>DEA {technicals.monthly_macd.dea.toFixed(3)}</span></div><small>柱值 {technicals.monthly_macd.histogram.toFixed(3)} · 30月均线 {technicals.sma30_monthly.toFixed(2)}</small></div>
         </div>
       </section>
+      <section className="selection-grid"><div><p>公司背景</p><h3>待验证</h3><span>当前数据源未提供央企/国企控股字段，不做猜测。</span></div><div><p>市值门槛</p><h3>待验证</h3><span>当前数据源未提供总市值字段，暂不判定是否达到千亿。</span></div><div className="verified"><p>持续分红</p><h3>{dividend.history.length} 年记录</h3><span>已核验 2021–2025 年均有实际现金分红。</span></div></section>
       <section className="bottom-grid"><article className="panel"><p className="section-kicker">下蛋记录</p><h2>现金分红轨迹</h2><div className="dividend-bars">{dividend.history.map(year=><div key={year.year}><span>{year.year}</span><i style={{width:`${Math.min(100,year.total/3*100)}%`}}/><b>{year.total.toFixed(3)} 元</b></div>)}</div></article>
         <article className="panel discipline"><p className="section-kicker">收网纪律</p><h2>仓位检查清单</h2><ul><li><b>分散</b><span>跨行业配置，避免单一板块集中。</span></li><li><b>留现金</b><span>永不满仓，保留应对波动的缓冲。</span></li><li><b>留底仓</b><span>减仓后保留 10%–20%，继续参与分红。</span></li><li><b>减仓观察</b><span>股息率降至 3%–3.5% 时分批评估。</span></li></ul></article>
       </section>
