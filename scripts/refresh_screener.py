@@ -64,6 +64,34 @@ def build() -> dict:
         CASE WHEN prior_close>0 THEN close/prior_close-1 END AS daily_return
       FROM daily_returns d
     ),
+    weekly_bars AS (
+      SELECT thscode, date_trunc('week', date) AS period, arg_max(close, date) AS close
+      FROM v_daily GROUP BY 1,2
+    ),
+    ranked_weekly AS (
+      SELECT *, row_number() OVER (PARTITION BY thscode ORDER BY period DESC) AS rn
+      FROM weekly_bars
+    ),
+    weekly_stats AS (
+      SELECT thscode, max(close) FILTER (WHERE rn=1) AS last_close,
+        avg(close) FILTER (WHERE rn<=20) AS middle,
+        stddev_pop(close) FILTER (WHERE rn<=20) AS sd
+      FROM ranked_weekly WHERE rn<=20 GROUP BY 1
+    ),
+    monthly_bars AS (
+      SELECT thscode, date_trunc('month', date) AS period, arg_max(close, date) AS close
+      FROM v_daily GROUP BY 1,2
+    ),
+    ranked_monthly AS (
+      SELECT *, row_number() OVER (PARTITION BY thscode ORDER BY period DESC) AS rn
+      FROM monthly_bars
+    ),
+    monthly_stats AS (
+      SELECT thscode, max(close) FILTER (WHERE rn=1) AS last_close,
+        avg(close) FILTER (WHERE rn<=20) AS middle,
+        stddev_pop(close) FILTER (WHERE rn<=20) AS sd
+      FROM ranked_monthly WHERE rn<=20 GROUP BY 1
+    ),
     market_stats AS (
       SELECT thscode,
         max(date) FILTER (WHERE rn=1) AS price_date,
@@ -79,9 +107,19 @@ def build() -> dict:
         d.d0/m.last_price*100 AS dividend_yield_pct, d.dividend_years,
         m.ma20, m.sd20, m.annual_vol,
         greatest(0, least(100, 100-m.annual_vol*180)) AS volatility_score,
-        CASE WHEN m.last_price <= m.ma20-m.sd20 THEN '靠近下轨'
-             WHEN m.last_price >= m.ma20+m.sd20 THEN '靠近上轨' ELSE 'BOLL中部' END AS boll_label
-      FROM market_stats m JOIN dividends d USING(thscode) LEFT JOIN v_symbol s USING(thscode)
+        CASE WHEN m.sd20 IS NULL OR m.sd20=0 THEN '数据不足'
+             WHEN m.last_price <= m.ma20-1.2*m.sd20 THEN '靠近下轨'
+             WHEN m.last_price >= m.ma20+1.2*m.sd20 THEN '靠近上轨' ELSE 'BOLL中部' END AS boll_label,
+        CASE WHEN w.sd IS NULL OR w.sd=0 THEN '数据不足'
+             WHEN w.last_close <= w.middle-1.2*w.sd THEN '靠近下轨'
+             WHEN w.last_close >= w.middle+1.2*w.sd THEN '靠近上轨' ELSE 'BOLL中部' END AS weekly_boll_label,
+        CASE WHEN mo.sd IS NULL OR mo.sd=0 THEN '数据不足'
+             WHEN mo.last_close <= mo.middle-1.2*mo.sd THEN '靠近下轨'
+             WHEN mo.last_close >= mo.middle+1.2*mo.sd THEN '靠近上轨' ELSE 'BOLL中部' END AS monthly_boll_label
+      FROM market_stats m JOIN dividends d USING(thscode)
+        LEFT JOIN weekly_stats w USING(thscode)
+        LEFT JOIN monthly_stats mo USING(thscode)
+        LEFT JOIN v_symbol s USING(thscode)
       WHERE d.d0>0 AND d.d1>0 AND d.d2>0 AND m.last_price>2 AND m.last_amount>=10000000
         AND d.d0/m.last_price BETWEEN 0.03 AND 0.12
     ),
@@ -98,7 +136,8 @@ def build() -> dict:
       round(dividend_per_share/.06,2) AS low_price,
       round(dividend_per_share/.055,2) AS mid_price,
       round(dividend_per_share/.05,2) AS high_price,
-      dividend_years, boll_label, round(volatility_score,1) AS volatility_score,
+      dividend_years, boll_label, weekly_boll_label, monthly_boll_label,
+      round(volatility_score,1) AS volatility_score,
       score, eligible_count
     FROM scored ORDER BY score DESC, dividend_yield_pct DESC
     """
@@ -116,7 +155,7 @@ def build() -> dict:
         "basis_fiscal_year": basis,
         "universe_count": int(coverage["universe_count"]),
         "eligible_count": rows[0]["eligible_count"] if rows else 0,
-        "method": "连续3个完整财年分红；静态股息率3%–12%；最近成交额不低于1000万元；按股息率、连续分红、日线BOLL位置与60日低波动综合排序。仅使用已实施分红；公司行动数据不含报告期时，9–12月归当年中报；同年已有较早分红的最后一笔8月分红也归当年中报；其余归上一财年年报。",
+        "method": "连续3个完整财年分红；静态股息率3%–12%；最近成交额不低于1000万元；按股息率、连续分红、日线BOLL位置与60日低波动综合排序。日/周/月BOLL均采用20期、2倍总体标准差，并以通道最低或最高20%判定靠近下轨或上轨。仅使用已实施分红；公司行动数据不含报告期时，9–12月归当年中报；同年已有较早分红的最后一笔8月分红也归当年中报；其余归上一财年年报。",
         "top10": rows[:10],
         "candidates": rows,
     }
