@@ -3,17 +3,17 @@
     "name": "东阿阿胶",
     "thscode": "000423.SZ"
   },
-  "as_of": "2026-08-25T14:35:52+08:00",
+  "as_of": "2026-08-25T16:14:41+08:00",
   "source": "同花顺金融数据服务",
   "price_adjustment": "none（不复权，与实时快照口径一致）",
   "snapshot": {
     "thscode": "000423.SZ",
     "ticker": "000423",
-    "volume": 6200633,
-    "turnover": 301780850,
-    "last_price": 48.86,
-    "price_change": 0.86,
-    "price_change_ratio_pct": 1.791667,
+    "volume": 6876030,
+    "turnover": 334784360,
+    "last_price": 48.89,
+    "price_change": 0.89,
+    "price_change_ratio_pct": 1.854167,
     "open_price": 48.18,
     "high_price": 49.06,
     "low_price": 48.18,
@@ -176,45 +176,45 @@
     "low": 45.09,
     "mid": 49.19,
     "high": 54.11,
-    "current_yield_pct": 5.54
+    "current_yield_pct": 5.53
   },
   "technicals": {
     "boll": {
       "daily": {
         "available": true,
-        "current": 48.86,
-        "lower": 48.34,
+        "current": 48.89,
+        "lower": 48.35,
         "middle": 52.6,
         "upper": 56.85,
-        "position": 0.0606,
+        "position": 0.0634,
         "zone": "near-lower",
         "label": "靠近下轨"
       },
       "weekly": {
         "available": true,
-        "current": 48.86,
+        "current": 48.89,
         "lower": 44.34,
         "middle": 50.39,
         "upper": 56.43,
-        "position": 0.3737,
+        "position": 0.376,
         "zone": "middle",
         "label": "区间中部"
       },
       "monthly": {
         "available": true,
-        "current": 48.86,
+        "current": 48.89,
         "lower": 44.05,
         "middle": 52.49,
         "upper": 60.93,
-        "position": 0.2849,
+        "position": 0.2866,
         "zone": "middle",
         "label": "区间中部"
       }
     },
     "monthly_macd": {
-      "dif": -0.5807,
-      "dea": -0.1541,
-      "histogram": -0.4266,
+      "dif": -0.61,
+      "dea": -0.2001,
+      "histogram": -0.4099,
       "below_zero_axis": true
     },
     "sma30_monthly": 55.01

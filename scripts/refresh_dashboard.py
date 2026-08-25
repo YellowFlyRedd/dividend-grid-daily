@@ -43,6 +43,23 @@ def as_date(timestamp_ms: int) -> datetime:
     return datetime.fromtimestamp(timestamp_ms / 1000, tz=timezone.utc).astimezone(SHANGHAI)
 
 
+def normalize_history(envelope: dict) -> list[dict]:
+    """Accept both legacy remote envelopes and the current CLI row format."""
+    data = envelope["data"]
+    if isinstance(data, dict):
+        return data["item"]
+    return [
+        {
+            "date_ms": int(datetime.fromisoformat(row["date"]).replace(tzinfo=SHANGHAI).timestamp() * 1000),
+            "open_price": row["open"],
+            "high_price": row["high"],
+            "low_price": row["low"],
+            "close_price": row["close"],
+        }
+        for row in data
+    ]
+
+
 def report_cycle(ex_date: datetime) -> tuple[int, str, str]:
     """Attribute cash payouts to the report that declared them.
 
@@ -111,7 +128,7 @@ def build_payload() -> dict:
     history_envelope = read_json(DATA_DIR / "history.json")
     dividend_envelope = read_json(DATA_DIR / "dividends.json")
     snapshot_envelope = read_json(DATA_DIR / "snapshot.json")
-    rows = history_envelope["data"]["item"]
+    rows = normalize_history(history_envelope)
     snapshot = snapshot_envelope["data"]["item"][0]
     snapshot_time = as_date(snapshot_envelope["data"]["timestamp"])
 
