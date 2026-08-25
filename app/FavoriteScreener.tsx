@@ -10,6 +10,7 @@ const money = (value: number) => `¥${value.toFixed(2)}`;
 export default function FavoriteScreener() {
   const [favorites, setFavorites] = useState<string[]>([]);
   const [ready, setReady] = useState(false);
+  const [query, setQuery] = useState("");
 
   useEffect(() => {
     try { setFavorites(JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]")); } catch { setFavorites([]); }
@@ -24,6 +25,8 @@ export default function FavoriteScreener() {
   const stocks = screener.top10 as Stock[];
   const candidates = screener.candidates as Stock[];
   const selected = useMemo(() => candidates.filter((stock) => favorites.includes(stock.thscode)), [favorites, candidates]);
+  const normalizedQuery = query.trim().toLowerCase();
+  const searchResults = useMemo(() => normalizedQuery ? candidates.filter((stock) => stock.name.toLowerCase().includes(normalizedQuery) || stock.thscode.toLowerCase().includes(normalizedQuery) || stock.thscode.slice(0, 6).includes(normalizedQuery)).slice(0, 8) : [], [candidates, normalizedQuery]);
 
   return <>
     <section className="screener-intro">
@@ -43,6 +46,15 @@ export default function FavoriteScreener() {
       </article>)}
     </section>
     <p className="timestamp">数据日期 {screener.market_data_date} · 全市场 {screener.universe_count.toLocaleString("zh-CN")} 只 · {screener.method} 机械排序仅用于观察，不构成投资建议。</p>
+    <section className="search-panel">
+      <div className="search-heading"><div><p className="section-kicker">SEARCH &amp; SAVE</p><h2>搜索并收藏</h2></div><span>可搜索 {screener.eligible_count.toLocaleString("zh-CN")} 只合格红利股票</span></div>
+      <label className="search-box"><span aria-hidden="true">⌕</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="输入公司名称或股票代码，例如：东阿阿胶 / 000423" aria-label="搜索股票名称或代码"/><button type="button" onClick={() => setQuery("")} disabled={!query}>清除</button></label>
+      {normalizedQuery && <div className="search-results" aria-live="polite">
+        {searchResults.length ? searchResults.map((stock) => <article key={stock.thscode}>
+          <div><h3>{stock.name}</h3><span>{stock.thscode}</span></div><div><small>最新价</small><b>{money(stock.last_price)}</b></div><div><small>静态股息率</small><b>{stock.dividend_yield_pct.toFixed(2)}%</b></div><button className={favorites.includes(stock.thscode) ? "favorite saved" : "favorite"} onClick={() => toggle(stock.thscode)}>{favorites.includes(stock.thscode) ? "★ 已收藏" : "☆ 收藏"}</button>
+        </article>) : <p className="empty-search">合格股票池中未找到“{query}”。</p>}
+      </div>}
+    </section>
     <section className="watchlist-panel">
       <div><p className="section-kicker">MY WATCHLIST</p><h2>我的每日监测</h2><p>{ready && selected.length ? `已收藏 ${selected.length} 只；收藏保存在这台设备的浏览器中。` : "点击 Top 10 右侧的收藏按钮，建立你的每日监测清单。"}</p></div>
       <div className="watchlist-chips">{selected.map((stock: Stock) => <button key={stock.thscode} onClick={() => toggle(stock.thscode)}><b>{stock.name} · {money(stock.last_price)}</b><span>股息率 {stock.dividend_yield_pct.toFixed(2)}% · 区间 {money(stock.dividend_per_share/.06)}–{money(stock.dividend_per_share/.05)} · 点击移除</span></button>)}</div>

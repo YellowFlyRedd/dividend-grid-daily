@@ -93,7 +93,7 @@ def build() -> dict:
       round(dividend_per_share/.05,2) AS high_price,
       dividend_years, boll_label, round(volatility_score,1) AS volatility_score,
       score, eligible_count
-    FROM scored ORDER BY score DESC, dividend_yield_pct DESC LIMIT 100
+    FROM scored ORDER BY score DESC, dividend_yield_pct DESC
     """
     rows = cli("db", "query", "--sql", sql)["data"]
     coverage = cli("db", "query", "--sql", "SELECT count(DISTINCT thscode) AS universe_count, max(date) AS latest_date FROM v_daily")["data"][0]
