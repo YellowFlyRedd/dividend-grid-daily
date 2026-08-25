@@ -97,8 +97,12 @@ def boll(values: list[float], period: int = 20) -> dict:
         zone, label = "near-lower", "靠近下轨"
     elif position >= 0.8:
         zone, label = "near-upper", "靠近上轨"
+    elif position <= 0.4:
+        zone, label = "middle", "中部偏下"
+    elif position < 0.6:
+        zone, label = "middle", "中轨附近"
     else:
-        zone, label = "middle", "区间中部"
+        zone, label = "middle", "中部偏上"
     return {
         "available": True,
         "current": round(current, 2), "lower": round(lower, 2),

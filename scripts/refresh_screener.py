@@ -109,13 +109,22 @@ def build() -> dict:
         greatest(0, least(100, 100-m.annual_vol*180)) AS volatility_score,
         CASE WHEN m.sd20 IS NULL OR m.sd20=0 THEN '数据不足'
              WHEN m.last_price <= m.ma20-1.2*m.sd20 THEN '靠近下轨'
-             WHEN m.last_price >= m.ma20+1.2*m.sd20 THEN '靠近上轨' ELSE 'BOLL中部' END AS boll_label,
+             WHEN m.last_price <= m.ma20-0.4*m.sd20 THEN '中部偏下'
+             WHEN m.last_price < m.ma20+0.4*m.sd20 THEN '中轨附近'
+             WHEN m.last_price < m.ma20+1.2*m.sd20 THEN '中部偏上'
+             ELSE '靠近上轨' END AS boll_label,
         CASE WHEN w.sd IS NULL OR w.sd=0 THEN '数据不足'
              WHEN w.last_close <= w.middle-1.2*w.sd THEN '靠近下轨'
-             WHEN w.last_close >= w.middle+1.2*w.sd THEN '靠近上轨' ELSE 'BOLL中部' END AS weekly_boll_label,
+             WHEN w.last_close <= w.middle-0.4*w.sd THEN '中部偏下'
+             WHEN w.last_close < w.middle+0.4*w.sd THEN '中轨附近'
+             WHEN w.last_close < w.middle+1.2*w.sd THEN '中部偏上'
+             ELSE '靠近上轨' END AS weekly_boll_label,
         CASE WHEN mo.sd IS NULL OR mo.sd=0 THEN '数据不足'
              WHEN mo.last_close <= mo.middle-1.2*mo.sd THEN '靠近下轨'
-             WHEN mo.last_close >= mo.middle+1.2*mo.sd THEN '靠近上轨' ELSE 'BOLL中部' END AS monthly_boll_label
+             WHEN mo.last_close <= mo.middle-0.4*mo.sd THEN '中部偏下'
+             WHEN mo.last_close < mo.middle+0.4*mo.sd THEN '中轨附近'
+             WHEN mo.last_close < mo.middle+1.2*mo.sd THEN '中部偏上'
+             ELSE '靠近上轨' END AS monthly_boll_label
       FROM market_stats m JOIN dividends d USING(thscode)
         LEFT JOIN weekly_stats w USING(thscode)
         LEFT JOIN monthly_stats mo USING(thscode)
@@ -125,7 +134,8 @@ def build() -> dict:
     ),
     scored AS (
       SELECT *, round(least(dividend_yield_pct,10)*7 + least(dividend_years,5)*4
-        + CASE boll_label WHEN '靠近下轨' THEN 10 WHEN 'BOLL中部' THEN 5 ELSE 0 END
+        + CASE WHEN boll_label='靠近下轨' THEN 10
+               WHEN boll_label IN ('中部偏下','中轨附近','中部偏上') THEN 5 ELSE 0 END
         + volatility_score*.1, 2) AS score,
         count(*) OVER () AS eligible_count
       FROM eligible
@@ -155,7 +165,7 @@ def build() -> dict:
         "basis_fiscal_year": basis,
         "universe_count": int(coverage["universe_count"]),
         "eligible_count": rows[0]["eligible_count"] if rows else 0,
-        "method": "连续3个完整财年分红；静态股息率3%–12%；最近成交额不低于1000万元；按股息率、连续分红、日线BOLL位置与60日低波动综合排序。日/周/月BOLL均采用20期、2倍总体标准差，并以通道最低或最高20%判定靠近下轨或上轨。仅使用已实施分红；公司行动数据不含报告期时，9–12月归当年中报；同年已有较早分红的最后一笔8月分红也归当年中报；其余归上一财年年报。",
+        "method": "连续3个完整财年分红；静态股息率3%–12%；最近成交额不低于1000万元；按股息率、连续分红、日线BOLL位置与60日低波动综合排序。日/周/月BOLL均采用20期、2倍总体标准差，将通道按位置分成靠近下轨、中部偏下、中轨附近、中部偏上、靠近上轨五档。仅使用已实施分红；公司行动数据不含报告期时，9–12月归当年中报；同年已有较早分红的最后一笔8月分红也归当年中报；其余归上一财年年报。",
         "top10": rows[:10],
         "candidates": rows,
     }

@@ -198,7 +198,7 @@
         "upper": 56.43,
         "position": 0.376,
         "zone": "middle",
-        "label": "区间中部"
+        "label": "中部偏下"
       },
       "monthly": {
         "available": true,
@@ -208,7 +208,7 @@
         "upper": 60.93,
         "position": 0.2866,
         "zone": "middle",
-        "label": "区间中部"
+        "label": "中部偏下"
       }
     },
     "monthly_macd": {
