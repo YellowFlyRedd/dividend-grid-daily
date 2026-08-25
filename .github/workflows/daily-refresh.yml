@@ -8,6 +8,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: daily-dividend-dashboard
@@ -17,6 +19,9 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     env:
       HITHINK_FINANCE_API_KEY: ${{ secrets.HITHINK_FINANCE_API_KEY }}
 
@@ -77,6 +82,7 @@ jobs:
           assert len(dashboard["grid"]) == 11
           PY
           npm run build
+          npm run build:pages
 
       - name: Commit complete refresh
         run: |
@@ -89,3 +95,12 @@ jobs:
           git add data/screener.json data/dashboard.json
           git commit -m "Refresh dividend dashboard $(date -u +%F)"
           git push
+
+      - name: Upload GitHub Pages site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: pages-dist
+
+      - name: Deploy GitHub Pages site
+        id: deployment
+        uses: actions/deploy-pages@v4
