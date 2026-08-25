@@ -7,6 +7,18 @@ type Stock = { thscode: string; name: string; last_price: number; dividend_per_s
 const STORAGE_KEY = "dividend-grid-favorites-v2";
 const DEFAULT_STOCK = "000423.SZ";
 const money = (value: number) => `¥${value.toFixed(2)}`;
+const bollPosition: Record<string, number> = { "靠近下轨": 10, "中部偏下": 30, "中轨附近": 50, "中部偏上": 70, "靠近上轨": 90 };
+const clamp = (value: number) => Math.max(0, Math.min(100, value));
+
+const opportunityScore = (stock: Stock) => {
+  const gridScore = clamp((stock.dividend_yield_pct - 3) / 3 * 100);
+  const bollScore = 100 - (
+    (bollPosition[stock.boll_label] ?? 50) * .2 +
+    (bollPosition[stock.weekly_boll_label] ?? 50) * .3 +
+    (bollPosition[stock.monthly_boll_label] ?? 50) * .5
+  );
+  return { gridScore, bollScore, total: gridScore * .6 + bollScore * .4 };
+};
 
 export default function FavoriteScreener() {
   const candidates = screener.candidates as Stock[];
@@ -27,6 +39,7 @@ export default function FavoriteScreener() {
   }, []);
 
   const selected = useMemo(() => candidates.filter((stock) => favorites.includes(stock.thscode)), [candidates, favorites]);
+  const favoriteTop10 = useMemo(() => selected.map((stock) => ({ stock, ...opportunityScore(stock) })).sort((a, b) => b.total - a.total).slice(0, 10), [selected]);
   const active = selected.find((stock) => stock.thscode === activeCode) || selected[0];
   const normalizedQuery = query.trim().toLowerCase();
   const searchResults = useMemo(() => normalizedQuery ? candidates.filter((stock) => stock.name.toLowerCase().includes(normalizedQuery) || stock.thscode.toLowerCase().includes(normalizedQuery) || stock.thscode.slice(0, 6).includes(normalizedQuery)).slice(0, 8) : [], [candidates, normalizedQuery]);
@@ -40,6 +53,16 @@ export default function FavoriteScreener() {
     <details className="glass-accordion favorites-accordion" open>
       <summary><div><p className="section-kicker">MY WATCHLIST</p><h2>我的收藏</h2><span>{ready ? `${selected.length} 只正在监测` : "载入收藏中"}</span></div><i aria-hidden="true">⌄</i></summary>
       <div className="accordion-content">
+        <details className="favorite-opportunities" open>
+          <summary><div><p className="section-kicker">WATCHLIST OPPORTUNITY</p><h3>收藏机会 Top 10</h3><span>仅对收藏股票进行机械排序</span></div><i aria-hidden="true">⌄</i></summary>
+          <div className="opportunity-content">
+            <p className="opportunity-method">综合分 = 股息率网格 60% + BOLL 位置 40%；BOLL 内按月线 50%、周线 30%、日线 20%。分数越高只表示更接近本策略的高股息率、低通道位置，不代表未来收益更高。</p>
+            {favoriteTop10.length ? <div className="opportunity-list">{favoriteTop10.map(({ stock, total, gridScore, bollScore }, index) => <button type="button" className={active?.thscode === stock.thscode ? "opportunity-row active" : "opportunity-row"} key={stock.thscode} onClick={() => setActiveCode(stock.thscode)}>
+              <span className="opportunity-rank">{String(index + 1).padStart(2, "0")}</span><span className="opportunity-name"><b>{stock.name}</b><small>{stock.thscode}</small></span><span><small>综合分</small><b>{total.toFixed(0)}</b></span><span><small>网格分</small><b>{gridScore.toFixed(0)}</b></span><span><small>BOLL分</small><b>{bollScore.toFixed(0)}</b></span><span className="opportunity-yield"><small>静态股息率</small><b>{stock.dividend_yield_pct.toFixed(2)}%</b></span><span className="opportunity-bolls"><small>日 {stock.boll_label}</small><small>周 {stock.weekly_boll_label}</small><small>月 {stock.monthly_boll_label}</small></span>
+            </button>)}</div> : <div className="empty-watchlist">收藏股票后，这里会显示你的观察优先级。</div>}
+            <p className="opportunity-note">该排序未纳入未来利润变化、分红削减、估值风险和重大事项，仅供每日观察，不构成买入建议或交易指令。</p>
+          </div>
+        </details>
         <div className="favorite-tabs" role="tablist" aria-label="收藏股票">
           {selected.map((stock) => <div className={active?.thscode === stock.thscode ? "favorite-tab active" : "favorite-tab"} key={stock.thscode}><button role="tab" aria-selected={active?.thscode === stock.thscode} onClick={() => setActiveCode(stock.thscode)}><b>{stock.name}</b><span>{stock.dividend_yield_pct.toFixed(2)}%</span></button><button className="tab-remove" onClick={() => removeFavorite(stock.thscode)} aria-label={`取消收藏${stock.name}`}>×</button></div>)}
           {!selected.length && <div className="empty-watchlist">还没有收藏，请从搜索或 Top 10 中添加。</div>}

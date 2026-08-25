@@ -9,6 +9,7 @@ import "./glass.css";
 import "./tabs.css";
 import "./strategy-guide.css";
 import "./title-refinement.css";
+import "./favorite-opportunities.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

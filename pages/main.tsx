@@ -11,6 +11,7 @@ import "../app/glass.css";
 import "../app/tabs.css";
 import "../app/strategy-guide.css";
 import "../app/title-refinement.css";
+import "../app/favorite-opportunities.css";
 
 function App() {
   return <main>
