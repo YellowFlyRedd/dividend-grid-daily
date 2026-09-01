@@ -3,21 +3,21 @@
     "name": "东阿阿胶",
     "thscode": "000423.SZ"
   },
-  "as_of": "2026-09-01T00:09:21+08:00",
+  "as_of": "2026-09-01T21:29:11+08:00",
   "source": "同花顺金融数据服务",
   "price_adjustment": "none（不复权，与实时快照口径一致）",
   "snapshot": {
     "thscode": "000423.SZ",
     "ticker": "000423",
-    "volume": 5200100,
-    "turnover": 247058080,
+    "volume": 5112969,
+    "turnover": 244198960,
     "last_price": 47.59,
-    "price_change": -0.19,
-    "price_change_ratio_pct": -0.397656,
-    "open_price": 48,
-    "high_price": 48.08,
-    "low_price": 47.28,
-    "prev_price": 47.78
+    "price_change": 0,
+    "price_change_ratio_pct": 0,
+    "open_price": 47.78,
+    "high_price": 48.13,
+    "low_price": 47.45,
+    "prev_price": 47.59
   },
   "dividend": {
     "basis_year": 2025,
