@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-11T20:49:07+08:00",
+  "as_of": "2026-09-14T23:00:02+08:00",
   "market_data_date": "2026-09-11",
   "basis_fiscal_year": 2025,
   "universe_count": 5562,
@@ -1144,7 +1144,7 @@
     },
     {
       "thscode": "600750.SH",
-      "name": "XD华润江",
+      "name": "华润江中",
       "price_date": "2026-09-11",
       "last_price": 22.33,
       "dividend_per_share": 1.38,
@@ -5212,7 +5212,7 @@
     },
     {
       "thscode": "603600.SH",
-      "name": "XD永艺股",
+      "name": "永艺股份",
       "price_date": "2026-09-11",
       "last_price": 10.07,
       "dividend_per_share": 0.46,
@@ -5554,7 +5554,7 @@
     },
     {
       "thscode": "603697.SH",
-      "name": "XD有友食",
+      "name": "有友食品",
       "price_date": "2026-09-11",
       "last_price": 9.46,
       "dividend_per_share": 0.42,
@@ -5932,7 +5932,7 @@
     },
     {
       "thscode": "603998.SH",
-      "name": "XD方盛制",
+      "name": "方盛制药",
       "price_date": "2026-09-11",
       "last_price": 10.17,
       "dividend_per_share": 0.45,
@@ -7390,7 +7390,7 @@
     },
     {
       "thscode": "603170.SH",
-      "name": "宝立食品",
+      "name": "XD宝立食",
       "price_date": "2026-09-11",
       "last_price": 12.19,
       "dividend_per_share": 0.44,
