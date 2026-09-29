@@ -3,21 +3,21 @@
     "name": "东阿阿胶",
     "thscode": "000423.SZ"
   },
-  "as_of": "2026-09-29T00:44:50+08:00",
+  "as_of": "2026-09-29T22:51:10+08:00",
   "source": "同花顺金融数据服务",
   "price_adjustment": "none（不复权，与实时快照口径一致）",
   "snapshot": {
     "thscode": "000423.SZ",
     "ticker": "000423",
-    "volume": 3649869,
-    "turnover": 164999770,
-    "last_price": 45.28,
-    "price_change": 0.13,
-    "price_change_ratio_pct": 0.287929,
-    "open_price": 45.15,
-    "high_price": 45.38,
-    "low_price": 45.05,
-    "prev_price": 45.15
+    "volume": 3463739,
+    "turnover": 156474340,
+    "last_price": 45.24,
+    "price_change": -0.04,
+    "price_change_ratio_pct": -0.088339,
+    "open_price": 45.21,
+    "high_price": 45.41,
+    "low_price": 44.99,
+    "prev_price": 45.28
   },
   "dividend": {
     "basis_year": 2025,
@@ -194,39 +194,39 @@
     "boll": {
       "daily": {
         "available": true,
-        "current": 45.28,
+        "current": 45.24,
         "lower": 44.46,
         "middle": 46.32,
         "upper": 48.18,
-        "position": 0.2195,
+        "position": 0.21,
         "zone": "middle",
         "label": "中部偏下"
       },
       "weekly": {
         "available": true,
-        "current": 45.28,
-        "lower": 42.77,
-        "middle": 48.56,
-        "upper": 54.34,
-        "position": 0.2169,
+        "current": 45.24,
+        "lower": 42.76,
+        "middle": 48.55,
+        "upper": 54.35,
+        "position": 0.2139,
         "zone": "middle",
         "label": "中部偏下"
       },
       "monthly": {
         "available": true,
-        "current": 45.28,
-        "lower": 43.44,
-        "middle": 51.66,
+        "current": 45.24,
+        "lower": 43.43,
+        "middle": 51.65,
         "upper": 59.88,
-        "position": 0.1122,
+        "position": 0.1102,
         "zone": "near-lower",
         "label": "靠近下轨"
       }
     },
     "monthly_macd": {
-      "dif": -1.1406,
-      "dea": -0.4048,
-      "histogram": -0.7358,
+      "dif": -1.1438,
+      "dea": -0.4054,
+      "histogram": -0.7383,
       "below_zero_axis": true
     },
     "sma30_monthly": 54.43
