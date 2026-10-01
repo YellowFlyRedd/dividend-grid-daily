@@ -3,7 +3,7 @@
     "name": "东阿阿胶",
     "thscode": "000423.SZ"
   },
-  "as_of": "2026-09-30T22:54:41+08:00",
+  "as_of": "2026-10-01T23:25:19+08:00",
   "source": "同花顺金融数据服务",
   "price_adjustment": "none（不复权，与实时快照口径一致）",
   "snapshot": {
@@ -195,10 +195,10 @@
       "daily": {
         "available": true,
         "current": 45.95,
-        "lower": 44.46,
-        "middle": 46.24,
-        "upper": 48.01,
-        "position": 0.4187,
+        "lower": 44.47,
+        "middle": 46.16,
+        "upper": 47.86,
+        "position": 0.4365,
         "zone": "middle",
         "label": "中轨附近"
       },
@@ -215,21 +215,21 @@
       "monthly": {
         "available": true,
         "current": 45.95,
-        "lower": 43.57,
-        "middle": 51.69,
-        "upper": 59.81,
-        "position": 0.1466,
+        "lower": 42.98,
+        "middle": 51.17,
+        "upper": 59.35,
+        "position": 0.1813,
         "zone": "near-lower",
         "label": "靠近下轨"
       }
     },
     "monthly_macd": {
-      "dif": -1.0871,
-      "dea": -0.3941,
-      "histogram": -0.693,
+      "dif": -1.3401,
+      "dea": -0.5488,
+      "histogram": -0.7912,
       "below_zero_axis": true
     },
-    "sma30_monthly": 54.45
+    "sma30_monthly": 53.69
   },
   "signals": {
     "moon_dip": {
