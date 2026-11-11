@@ -3,21 +3,21 @@
     "name": "东阿阿胶",
     "thscode": "000423.SZ"
   },
-  "as_of": "2026-11-11T00:25:04+08:00",
+  "as_of": "2026-11-12T00:06:36+08:00",
   "source": "同花顺金融数据服务",
   "price_adjustment": "none（不复权，与实时快照口径一致）",
   "snapshot": {
     "thscode": "000423.SZ",
     "ticker": "000423",
-    "volume": 4372350,
-    "turnover": 219904650,
-    "last_price": 50.38,
-    "price_change": -0.02,
-    "price_change_ratio_pct": -0.039683,
-    "open_price": 50.2,
-    "high_price": 50.55,
-    "low_price": 49.69,
-    "prev_price": 50.4
+    "volume": 9218277,
+    "turnover": 452479990,
+    "last_price": 48.55,
+    "price_change": -1.83,
+    "price_change_ratio_pct": -3.632394,
+    "open_price": 50.24,
+    "high_price": 50.49,
+    "low_price": 48.5,
+    "prev_price": 50.38
   },
   "dividend": {
     "basis_year": 2025,
@@ -188,48 +188,48 @@
     "low": 45.09,
     "mid": 49.19,
     "high": 54.11,
-    "current_yield_pct": 5.37
+    "current_yield_pct": 5.57
   },
   "technicals": {
     "boll": {
       "daily": {
         "available": true,
-        "current": 50.38,
-        "lower": 46.0,
-        "middle": 48.76,
-        "upper": 51.52,
-        "position": 0.794,
+        "current": 48.55,
+        "lower": 46.07,
+        "middle": 48.7,
+        "upper": 51.33,
+        "position": 0.4715,
         "zone": "middle",
-        "label": "中部偏上"
+        "label": "中轨附近"
       },
       "weekly": {
         "available": true,
-        "current": 50.38,
-        "lower": 43.42,
-        "middle": 48.67,
-        "upper": 53.91,
-        "position": 0.6632,
+        "current": 48.55,
+        "lower": 43.39,
+        "middle": 48.58,
+        "upper": 53.76,
+        "position": 0.4974,
         "zone": "middle",
-        "label": "中部偏上"
+        "label": "中轨附近"
       },
       "monthly": {
         "available": true,
-        "current": 50.38,
-        "lower": 43.99,
-        "middle": 50.76,
-        "upper": 57.53,
-        "position": 0.4718,
+        "current": 48.55,
+        "lower": 43.83,
+        "middle": 50.67,
+        "upper": 57.51,
+        "position": 0.345,
         "zone": "middle",
-        "label": "中轨附近"
+        "label": "中部偏下"
       }
     },
     "monthly_macd": {
-      "dif": -1.0959,
-      "dea": -0.6649,
-      "histogram": -0.431,
+      "dif": -1.2419,
+      "dea": -0.6941,
+      "histogram": -0.5478,
       "below_zero_axis": true
     },
-    "sma30_monthly": 53.18
+    "sma30_monthly": 53.12
   },
   "signals": {
     "moon_dip": {
@@ -243,11 +243,11 @@
       "definition": "日/周/月 BOLL 均位于下轨 20% 区域，且月线 MACD 位于零轴下方"
     },
     "dragon_return": {
-      "triggered": true,
+      "triggered": false,
       "conditions": {
         "recent_monthly_breakout": true,
-        "within_3pct_of_support": true,
-        "holding_support": true
+        "within_3pct_of_support": false,
+        "holding_support": false
       },
       "definition": "近6个月月线向上突破中轨，当前回踩月线中轨或30月均线±3%并守住支撑"
     }
