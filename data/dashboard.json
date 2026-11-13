@@ -3,21 +3,21 @@
     "name": "东阿阿胶",
     "thscode": "000423.SZ"
   },
-  "as_of": "2026-11-13T00:47:26+08:00",
+  "as_of": "2026-11-14T00:12:13+08:00",
   "source": "同花顺金融数据服务",
   "price_adjustment": "none（不复权，与实时快照口径一致）",
   "snapshot": {
     "thscode": "000423.SZ",
     "ticker": "000423",
-    "volume": 7042998,
-    "turnover": 344422300,
-    "last_price": 49.39,
-    "price_change": 0.84,
-    "price_change_ratio_pct": 1.730175,
-    "open_price": 48.69,
-    "high_price": 49.49,
-    "low_price": 48.18,
-    "prev_price": 48.55
+    "volume": 8014459,
+    "turnover": 402785750,
+    "last_price": 50.45,
+    "price_change": 1.06,
+    "price_change_ratio_pct": 2.146183,
+    "open_price": 49.25,
+    "high_price": 50.84,
+    "low_price": 48.93,
+    "prev_price": 49.39
   },
   "dividend": {
     "basis_year": 2025,
@@ -188,48 +188,48 @@
     "low": 45.09,
     "mid": 49.19,
     "high": 54.11,
-    "current_yield_pct": 5.48
+    "current_yield_pct": 5.36
   },
   "technicals": {
     "boll": {
       "daily": {
         "available": true,
-        "current": 49.39,
-        "lower": 46.24,
-        "middle": 48.84,
-        "upper": 51.44,
-        "position": 0.6066,
+        "current": 50.45,
+        "lower": 46.18,
+        "middle": 48.92,
+        "upper": 51.66,
+        "position": 0.7788,
         "zone": "middle",
         "label": "中部偏上"
       },
       "weekly": {
         "available": true,
-        "current": 49.39,
+        "current": 50.45,
         "lower": 43.42,
-        "middle": 48.62,
-        "upper": 53.82,
-        "position": 0.5742,
+        "middle": 48.67,
+        "upper": 53.92,
+        "position": 0.6694,
         "zone": "middle",
-        "label": "中轨附近"
+        "label": "中部偏上"
       },
       "monthly": {
         "available": true,
-        "current": 49.39,
-        "lower": 43.92,
-        "middle": 50.71,
-        "upper": 57.51,
-        "position": 0.4027,
+        "current": 50.45,
+        "lower": 44.0,
+        "middle": 50.77,
+        "upper": 57.53,
+        "position": 0.4767,
         "zone": "middle",
         "label": "中轨附近"
       }
     },
     "monthly_macd": {
-      "dif": -1.1749,
-      "dea": -0.6807,
-      "histogram": -0.4942,
+      "dif": -1.0903,
+      "dea": -0.6638,
+      "histogram": -0.4265,
       "below_zero_axis": true
     },
-    "sma30_monthly": 53.15
+    "sma30_monthly": 53.18
   },
   "signals": {
     "moon_dip": {
