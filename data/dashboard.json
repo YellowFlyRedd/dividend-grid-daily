@@ -3,21 +3,21 @@
     "name": "东阿阿胶",
     "thscode": "000423.SZ"
   },
-  "as_of": "2026-11-26T02:39:13+08:00",
+  "as_of": "2026-11-27T02:23:17+08:00",
   "source": "同花顺金融数据服务",
   "price_adjustment": "none（不复权，与实时快照口径一致）",
   "snapshot": {
     "thscode": "000423.SZ",
     "ticker": "000423",
-    "volume": 9744597,
-    "turnover": 502803930,
-    "last_price": 51.9,
-    "price_change": 0.69,
-    "price_change_ratio_pct": 1.347393,
-    "open_price": 51.2,
-    "high_price": 52.26,
-    "low_price": 50.55,
-    "prev_price": 51.21
+    "volume": 7825625,
+    "turnover": 405651260,
+    "last_price": 51.83,
+    "price_change": -0.07,
+    "price_change_ratio_pct": -0.134875,
+    "open_price": 51.55,
+    "high_price": 52.42,
+    "low_price": 51.38,
+    "prev_price": 51.9
   },
   "dividend": {
     "basis_year": 2025,
@@ -188,45 +188,45 @@
     "low": 45.09,
     "mid": 49.19,
     "high": 54.11,
-    "current_yield_pct": 5.21
+    "current_yield_pct": 5.22
   },
   "technicals": {
     "boll": {
       "daily": {
         "available": true,
-        "current": 51.9,
-        "lower": 48.06,
-        "middle": 50.84,
-        "upper": 53.62,
-        "position": 0.6905,
+        "current": 51.83,
+        "lower": 48.57,
+        "middle": 51.03,
+        "upper": 53.5,
+        "position": 0.6621,
         "zone": "middle",
         "label": "中部偏上"
       },
       "weekly": {
         "available": true,
-        "current": 51.9,
+        "current": 51.83,
         "lower": 43.72,
         "middle": 49.18,
-        "upper": 54.65,
-        "position": 0.7487,
+        "upper": 54.64,
+        "position": 0.743,
         "zone": "middle",
         "label": "中部偏上"
       },
       "monthly": {
         "available": true,
-        "current": 51.9,
+        "current": 51.83,
         "lower": 44.05,
-        "middle": 50.84,
+        "middle": 50.83,
         "upper": 57.62,
-        "position": 0.5783,
+        "position": 0.5734,
         "zone": "middle",
         "label": "中轨附近"
       }
     },
     "monthly_macd": {
-      "dif": -0.9746,
-      "dea": -0.6407,
-      "histogram": -0.334,
+      "dif": -0.9802,
+      "dea": -0.6418,
+      "histogram": -0.3384,
       "below_zero_axis": true
     },
     "sma30_monthly": 53.23
